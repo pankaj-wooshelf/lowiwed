@@ -1,0 +1,219 @@
+.HelpSidebar{
+    height: 700px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7C58A;
+    padding: 10px 10px;
+}
+ 
+.NavTitle{
+    background: transparent !important;
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 11px;
+line-height: 18px;
+letter-spacing: 0%;
+color: #9095A0;
+}
+.activeTab {
+  background-color: transparent !important; /* apne color ke hisab se change karo */
+  color: #E7BC73 !important;
+}
+
+.startColor{
+    /* font-size: 12px; */
+    /* color: #E7BC73; */
+     margin-right: 6px;
+  font-size: 16px;
+  /* vertical-align: middle; */
+}
+.NavTitle:hover{
+color: #E7BC73;
+}
+
+
+/* Raise And Support  */
+
+.supportWrapper {
+  background: #F8F4EF;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+.headingRaiseingSupport{
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0%;
+color: #9095A0;
+}
+.LabelOfForms{
+    font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #4A4A4A;
+}
+.inputSubject{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.inputSubject span{
+    font-size: 14px;
+    color: #A0A0A0;
+    margin: -15px 0px;
+}
+.forminputH{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #A0A0A0;
+}
+/* .forminputH::placeholder{
+    
+} */
+.forminputH:focus{
+    box-shadow: none;
+}
+.InsidemessageSelectfield{
+    width: 120px;
+    font-size: 14px;
+    border: none;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.InsidemessageSelectfield:focus{
+  box-shadow: none;
+}
+
+.messageiconsimportant{
+    object-fit: cover;
+}
+.AFormSelectMessage{
+    background-color: #FFD70033;
+    font-family: 'Inter';
+    font-weight: 400;
+    /* padding-right: 1.5rem; */
+    background-position: right 0.25rem center !important; /* move arrow closer */
+    background-size: 10px 10px !important; /* make arrow smaller */
+    height: 32px; /* optional: make height smaller */
+    line-height: 1.2;
+    font-size: 14px;
+    border: 1px solid #FFD700 !important;
+}
+
+.AFormSelectMessage:focus{
+    box-shadow: none;
+}
+.allignmentForTextDrc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.iconsForAllignmen{
+    font-size: 16px;
+    color: #4A4A4A;
+    cursor: pointer;
+}
+.formsCMemmsageMainBoxText{
+    border: 1px solid #D0D0D0;
+}
+.formsCMemmsageMainBoxText:focus{
+    box-shadow: none;
+    border: 1px solid #D0D0D0;
+}
+.editorToolbar {
+  background: #FFFFFF;
+  border: 1px solid #dee2e6;
+  border-bottom: none;
+  padding: 8px 12px;
+  border-radius: 4px 4px 0 0;
+}
+
+.toolbarIcons {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.customFileLabel {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+}
+
+.customFileLabel::placeholder{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #A0A0A0;
+
+}
+.iconUser{
+    font-size: 12px;
+    color: #A0A0A0;
+}
+.attachmentFileIcon{
+    font-size: 16px;
+    color: #A0A0A0;
+    transform: rotate(45deg);
+}
+.emailIcon{
+    font-size: 18px;
+    color: #A0A0A0;
+}
+textarea.form-control {
+  border-radius: 0 0 4px 4px;
+}
+
+.submitBtn {
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+  background-color: #E7C58A;
+  border: none;
+  padding: 10px 34px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.submitBtn:hover,.submitBtn:active{
+    background-color: #E7C58A;
+}

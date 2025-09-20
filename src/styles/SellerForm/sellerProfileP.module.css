@@ -1,0 +1,410 @@
+.imgForContainer {
+  height: 330px;
+  background: url("/Images/Bg_GrothSec.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+
+.breadcrumbWrapper {
+  margin-top: 20px;
+  /* margin-left: -30px; */
+  text-align: flex-start;
+}
+
+.breadcrumb {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #7f7f7f;
+  /* padding: 0px 160px; */
+}
+
+.MainContainerForAllRowCol {
+  position: relative;
+  z-index: 2000;
+}
+.SellerProfileFixedLayCon {
+  transform: translateY(-100px);
+}
+
+/* left Col is here  */
+.leftsideCardFirst {
+  height: 491px;
+  background-color: #ffffff;
+  border: 1px solid #ebebea;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 9px 0px #171a1f1c, 0px 0px 2px 0px #171a1f1f;
+  position: relative;
+}
+.heartLikebtn {
+  width: 36px;
+  height: 36px;
+  background-color: #e6b8bf;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  font-size: 26px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+.forcenterLogo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.logoMaking {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  border: 4px solid #ffffff;
+  background-color: #1a3d4d;
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 32px;
+  overflow: "hidden";
+}
+.logoMaking span {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0%;
+
+  color: #ffffff;
+}
+.wedingFacText {
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #666666;
+}
+.pForExcellentMain {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #1f2937;
+}
+.starmark {
+  color: #eab308;
+}
+.excelentReveiewTexth {
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #4b5563;
+}
+.ActiveDaysAgoText {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 20px;
+}
+.hrline {
+  /* color: #E5E7EB; */
+  border: 1px solid #e5e7eb;
+}
+.btnForChatVendor {
+  height: 40px;
+  background-color: #e6b8bf;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+}
+.BtnForGetQuote {
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e6b8bf;
+  color: #e6b8bf;
+  font-size: 14px;
+  line-height: 22px;
+  /* padding: 0px 10px; */
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.BtnForGetQuote:hover {
+  background-color: #ffffff;
+  border: 1px solid #e6b8bf;
+  color: #e6b8bf;
+}
+.socialIconbg {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #e6b8bf;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCatdSecound {
+  height: 501px;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0px 8px 17px 0px #171a1f26, 0px 0px 2px 0px #171a1f1f;
+
+  display: flex;
+  align-items: center;
+}
+.CardBodyContentSH {
+  width: 250px;
+  height: 358px;
+  background-color: #fbeaea;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.MoreInfoText {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #9095a0;
+}
+.IconsMainCo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.IconsBgLi {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  color: #9095a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joinedInText {
+  color: #374151;
+  font-size: 14px;
+  line-height: 20px;
+}
+.ReportThisVendorText {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* RIght Col Row Started Here  */
+
+.RightColRowMain {
+  background-color: #fdfbf9;
+  /* height: 1741px; */
+  border: 1px solid #ebebea;
+  box-shadow: 0px 4px 9px 0px #171a1f1c, 0px 0px 2px 0px #171a1f1f;
+}
+.CardForTabsMain {
+  height: 154px;
+  background-color: #fbeaea;
+  /* border: 1px solid #BCC1CA; */
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+.DicoverAndTabMain {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.DiscoverHead {
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #666666;
+}
+.BtnFortabsH {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.BtnTabs {
+  background-color: #ffffff;
+  color: #e38e9c;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.BtnTabs:hover,
+.BtnTabs:active {
+  background-color: #e6b8bf !important;
+}
+.activeBTNH {
+  height: 40px;
+  border-radius: 20px;
+  background-color: #e6b8bf;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.activeBTNH:hover .activeBTNH:active {
+  background-color: #e6b8bf !important;
+}
+.Followmain {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.FollowBtn {
+  width: 115px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #e8618c;
+  border-radius: 16px;
+  color: #e38e9c;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FollowBtn:hover {
+  background-color: #ffffff;
+  color: #e38e9c;
+  border: 1px solid #e8618c;
+}
+.notificationIcon {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #bcc1ca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6b8bf;
+  font-size: 20px;
+}
+
+/* About Section is here  */
+
+.aboutSection {
+  padding: 30px 0;
+}
+
+.sectionTitle {
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  margin-bottom: 15px;
+  color: #7f7f7f;
+}
+
+.text {
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #374151;
+}
+.iconsForAboutInsiseCon {
+  display: flex;
+  gap: 5px;
+}
+.iconsBgCirculeTic {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #4caf50;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.servicesTitle {
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  margin-bottom: 10px;
+  color: #7f7f7f;
+}
+
+.servicesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .servicesList li {
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  color: #28a745; 
+  margin-right: 8px;
+  font-size: 16px;
+} */
+
+.offeredserviceTexts {
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #374151;
+}
+
+/* Freequenty asked question  */
+
+.FaqHeadingName {
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #7f7f7f;
+}

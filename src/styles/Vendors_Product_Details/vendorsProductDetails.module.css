@@ -1,0 +1,112 @@
+.photo{
+    border-radius: 16px;
+}
+.heartIconvp{
+    width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 15px;
+  right: -255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 3px solid #FFE5E5;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.heartICon{
+color: #FFE5E5;
+  font-size: 30px;
+}
+.ViewAll{
+    /* width: 104px;
+    height: 36px; */
+    /* background-color: white; */
+    
+    position: relative;
+    /* z-index: 300; */
+}
+.ViewP{
+    color:  #E7BC73;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 13px;
+    width: 104px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    /* color: #666666; */
+}
+.hederMainp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    font-size: 24px;
+    color: #E6B8BF;
+    font-family: 'Adamina';
+    font-weight: 400;
+    line-height: 36px;
+}
+.paragraphH{
+    font-size: 12px;
+    color: #9095A0;
+}
+.InStokeP{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.InStokespan1{
+    font-family: 'Adamina';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #22CCB2;
+}
+.InStokespan2{
+    font-family: 'Adamina';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #9095A0;
+}
+
+.headerDescription{
+     padding-top: 20px;
+    font-family: 'Adamina';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+.DescParagraph{
+    padding-top: 10px;
+    font-family: 'Adamina';
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 10px;
+}
+.DescsecoundP,.ParagCountry{
+    font-family: 'Adamina';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #666666;
+}
+/* .ParagCountry{
+
+} */

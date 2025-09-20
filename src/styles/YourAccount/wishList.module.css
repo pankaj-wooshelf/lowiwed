@@ -1,0 +1,566 @@
+.card {
+  /* padding: 0 px !important; */
+  /* margin: 0px 10px !important; */
+  /* min-width: 290px; */
+  /* min-height: 420px; */
+  height: 380px;
+  border: 1px solid #e7c58a;
+  height: 487px;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Inter";
+  background: #e7c58a;
+  color: #ffffff;
+  margin: 0;
+  padding: 2px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 14px;
+  z-index: 2;
+}
+
+.cardImg {
+  height: 290px; /* pehle 250px tha — kam kar diya */
+  object-fit: cover;
+}
+
+.heartIcon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.heartI {
+  /* background-color: #fff; */
+  color: #ffffff;
+  font-size: 35px;
+}
+.bodyContents {
+  border: 1px solid #ffeccc;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.forTextMoneyDollerCen {
+  display: flex;
+  align-items: center;
+}
+.cardTitle {
+  text-align: flex-start;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 2px 10px;
+  color: #0a1a35;
+  font-family: "Adamina";
+  font-weight: 400;
+  word-break: break-word;
+  white-space: normal;
+  display: block;
+}
+
+.doller {
+  font-size: 18px;
+}
+.price {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+  display: flex;
+  gap: 2px;
+  margin: 0 !important;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+/* .vendorRow {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;  */
+/* margin-top: 10px; */
+/* } */
+
+.divider {
+  color: #cfb07c;
+  margin: 4px 0;
+}
+.ImageProfi {
+  background: #ced0f8;
+  border: 1px #636ae8;
+}
+.businessName {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 11px;
+  color: #0a1a35;
+  line-height: 14px;
+  /* margin: 0 !important; */
+  /* padding: 0 !important; */
+}
+.location {
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 400;
+  /* margin: 0 !important; */
+  /* padding: 0 !important; */
+}
+.shareBtn {
+  width: 54px;
+  height: 44px;
+  border-radius: 50%;
+  /* background-color: #E7C58A; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareCl {
+  font-size: 30px;
+  color: #e7c58a;
+  transform: rotate(45deg);
+}
+.OrderNowMain {
+  width: 100%;
+  font-family: "Adamina";
+  height: 48px;
+  background-color: #e7c58a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: 500; */
+  /* font-size: 1.2rem; */
+  color: white;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.OrderNowMain p {
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #ffffff;
+}
+/* Already existing styles remain as is */
+
+/* ---- MEDIA QUERIES FOR CARD GRID ---- */
+
+/* Default: 4 columns (lg:3 => 25%) */
+
+@media (max-width: 1024px) {
+  /* 3 cards per row => 33.33% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .filterList li {
+    font-size: 12px;
+  }
+  .cardTitle {
+    font-size: 8px;
+  }
+  .price {
+    font-size: 10px;
+  }
+  .businessName {
+    font-size: 7px;
+    line-height: 9px;
+  }
+  .location {
+    font-size: 7px;
+  }
+  .shareCl {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 2 cards per row => 50% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* Hide sidebar below 768px */
+  .sidebar,
+  .filterBtn {
+    display: none !important;
+  }
+  .ShowingResultHalf {
+    display: none;
+  }
+  .FilterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background: transparent;
+    font-family: "Inter";
+    font-size: 14px;
+    border: 1px solid #e6b8bf;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-weight: 400;
+    color: #cfb07c;
+  }
+  .shareCl {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 475px) {
+  /* 1 card per row => 100% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cardTitle {
+    font-size: 14px; /* Increase font-size for better readability */
+    line-height: 20px;
+    /* word-wrap: break-word; */
+  }
+  .title {
+    font-family: "Adamina";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 33px;
+    color: #0a1a35;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+  .viewBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .FilterBtn {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .subtitle {
+    font-size: 8px;
+  }
+  .viewBtn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .FilterBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* 2nd card  */
+
+.card2 {
+  /* padding: 0px !important; */
+  /* margin: 0 !important; */
+  min-height: 380px;
+  /* height: 487px; */
+  border: 1px solid #ffeccc;
+  position: relative;
+  box-shadow: 0px 8px 17px 0px #171a1f26, 0px 0px 2px 0px #171a1f1f;
+}
+
+.badge2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Inter";
+  background: #e7c58a;
+  color: #ffffff;
+  margin: 0;
+  padding: 2px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 14px;
+  z-index: 2;
+}
+
+.cardImg2 {
+  height: 200px; /* pehle 250px tha — kam kar diya */
+  object-fit: cover;
+}
+
+.heartIcon2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 5px solid #ffe5e5;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.heartI2 {
+  /* background-color: #fff; */
+  color: #ffe5e5;
+  font-size: 35px;
+}
+
+.forTitlesMain {
+  display: flex;
+  align-items: center;
+}
+.textsHForCarts {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666666;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cardTitle2 {
+  text-align: flex-start;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #0a1a35;
+  font-family: "Adamina";
+  font-weight: 400;
+  word-break: break-word;
+  white-space: normal;
+  display: block;
+}
+
+.priceRes {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #565e6c;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.price2 {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666666;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.starHY {
+  font-size: 14px;
+}
+.dollerIcon {
+  font-size: 18px;
+}
+.humanIcon {
+  font-size: 18px;
+}
+/* .vendorRow {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;  */
+/* margin-top: 10px; */
+/* } */
+
+.divider2 {
+  color: #cfb07c;
+  margin: 4px 0;
+}
+.insideHrline {
+  border-top: 1px solid #ffeccc;
+  border-bottom: 1px solid #ffeccc;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 6px 0px; */
+}
+.ImageProfi {
+  background: #ced0f8;
+  border: 1px #636ae8;
+}
+.businessName2 {
+  font-family: "Adamina";
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 10px;
+  color: #0a1a35;
+  line-height: 18px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.location2 {
+  font-size: 9px;
+  line-height: 12px;
+  font-weight: 400;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.shareBtn2 {
+  width: 44px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #e7c58a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareCl2 {
+  font-size: 30px;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* Already existing styles remain as is */
+
+/* ---- MEDIA QUERIES FOR CARD GRID ---- */
+
+/* Default: 4 columns (lg:3 => 25%) */
+
+@media (max-width: 1024px) {
+  /* 3 cards per row => 33.33% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .filterList li {
+    font-size: 12px;
+  }
+  .cardTitle {
+    font-size: 8px;
+  }
+  .price {
+    font-size: 10px;
+  }
+  .businessName {
+    font-size: 7px;
+    line-height: 9px;
+  }
+  .location {
+    font-size: 7px;
+  }
+  .shareCl {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 2 cards per row => 50% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* Hide sidebar below 768px */
+  .sidebar,
+  .filterBtn {
+    display: none !important;
+  }
+  .ShowingResultHalf {
+    display: none;
+  }
+  .FilterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background: transparent;
+    font-family: "Inter";
+    font-size: 14px;
+    border: 1px solid #e6b8bf;
+    border-radius: 25px;
+    padding: 5px 20px;
+    font-weight: 400;
+    color: #cfb07c;
+  }
+  .shareCl {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 475px) {
+  /* 1 card per row => 100% */
+  .promotedSection .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cardTitle {
+    font-size: 14px; /* Increase font-size for better readability */
+    line-height: 20px;
+    /* word-wrap: break-word; */
+  }
+  .title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+  .viewBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .FilterBtn {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .subtitle {
+    font-size: 8px;
+  }
+  .viewBtn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .FilterBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

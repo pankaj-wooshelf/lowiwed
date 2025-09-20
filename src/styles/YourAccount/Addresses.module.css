@@ -1,0 +1,318 @@
+.mainDiv{
+    padding: 0px 15px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 1px 0px #171A1F12;
+
+    box-shadow: 0px 0px 2px 0px #171A1F1F;
+
+}
+
+.headAndBtnCon{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2px;
+}
+.headAndBtnCon h4{
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    letter-spacing: 0%;
+}
+.NewAdressBtn{
+    font-family: 'Inter';
+    font-weight: 500;
+    background: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #E6B8BF;
+    border: 1px solid #E6B8BF;
+}
+.NewAdressBtn:hover ,.NewAdressBtn:active{
+  background: transparent !important;
+  border: 1px solid #E6B8BF !important;
+  color: #E6B8BF !important;
+}
+
+.DefaultAdressesMain{
+    margin: 5px 10px;
+    border: 1px solid #00000000;
+    border-radius: 6px;
+    /* background-color: #00000000; */
+}
+.addresTitle{
+   font-family: 'Archivo';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 20px;
+   color: #333333;
+}
+
+.DefaultAdressesMainInside{
+    width: 700px;
+    height: 221px;
+    border: 1px solid #E7E7E7;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardForOtherAddressCard{
+    width: 700px;
+    height: 131px;
+     border: 1px solid #E7E7E7;
+     border-radius: 6px;
+     /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.headingBtnD{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headingBtnD h6{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #545454;
+}
+.btnDefaultA{
+    /* width: 53px; */
+    height: 24px;
+    background: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #545454;
+    display: flex;
+    align-items: center;
+
+}
+.btnDefaultA:hover,.btnDefaultA:active{
+    background: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    color: #545454;
+}
+.paragraphaddress{
+    padding: 0px 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #545454;
+}
+.cardEdit{
+    /* min-height: 100px; */
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F6CE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #E7E7E7;
+    border-left: 0px solid #E7E7E7;
+    border-bottom: 0px solid #E7E7E7;
+    /* border-bottom: 0px solid #E7E7E7; */
+    cursor: pointer;
+}
+.cardREmove{
+    /* min-height: 100px; */
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2F6CE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #E7E7E7;
+    border-left: 0px solid #E7E7E7;
+    border-bottom: 0px solid #E7E7E7;
+    border-right: 0px solid #E7E7E7;
+    cursor: pointer;
+}
+
+.forCardsMainEditAndRemove{
+    display: flex;
+    flex-direction:row;
+}
+
+.setDefaultBtnH{
+    border: none;
+    background: transparent;
+    color: #2F6CE6;
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+
+}
+
+.setDefaultBtnH:hover , .setDefaultBtnH:active{
+    background: transparent !important;
+    border: none !important;
+    color: #E6B8BF;
+} 
+
+
+/* for Address modal  */
+
+/* .modalFormAddAddress{
+    height: 90vh;
+} */
+
+/* AddAddressModal.module.css */
+/* AddAddressModal.module.css */
+.noScrollModal .modal-dialog {
+  max-width: 600px;        /* width control */
+}
+
+.noScrollModal .modal-content {
+  border-radius: 16px;
+  height: auto !important; /* modal ki height auto ho */
+  max-height: none !important;
+  overflow: visible !important; /* content overflow allow */
+}
+
+.noScrollModal .modal-body {
+  max-height: none !important;
+  overflow: visible !important; /* scroll hatao */
+}
+
+
+.formCard {
+  width: 700px;
+  border: 1px solid #E7E7E7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.4s ease-in-out;
+}
+.formHeaderAddress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #E6B8BF;
+}
+.NewAddressFormHeading{
+    width: 700px;
+    font-family: 'Archivo';
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 28px;
+/* text-align: center !important; */
+color: #9095A0;
+display: flex;
+justify-content: center;
+  /* background: linear-gradient(90deg, #ff416c, #ff4b2b, #1dd1a1, #54a0ff); */
+  /* background: linear-gradient(90deg, #E6B8BF, #E7C58A, #EA3374, #2F6CE6);
+  background-size: 300% 300%;
+ -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; */
+
+  /* Animate gradient */
+  /* animation: gradientSlide 5s ease infinite; */
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.LabelName{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+/* line-height: 36px; */
+color: #9095A0;
+
+}
+.formFillMainCon{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+    border: 1px solid #E0E0E0;
+    color: #9095A0;
+}
+
+.formFillMainCon:focus{
+    box-shadow: none;
+    border: 1px solid #E6B8BF;
+}
+.CloseButtonFormAddress{
+    position: absolute;
+    right: 10px;
+    color: #9095A0;
+}
+
+.customCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* checkbox aur label ke beech space */
+}
+
+.customCheckbox label {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-style: Regular;
+   font-size: 16px;
+   color: #9095A0; /* apni theme ka color */
+   cursor: pointer;
+}
+
+.customCheckbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #e7bc73; /* modern browsers mein checkbox ka color */
+}
+
+.submitBtnForSave{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+border: 1px solid #E7BC73;
+background: transparent;
+color: #E7BC73;
+}
+
+.submitBtnForSave:hover , .submitBtnForSave:active{
+    background:transparent !important;
+    color: #E7BC73 !important;
+    border: 1px solid #E6B8BF;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,130 @@
+.businessMainStories {
+  min-height: 556px;
+  
+}
+.innerBusinessCardStories{
+  width: 100%;
+  border: 1px solid #E7C58A;
+}
+
+
+.cardsRowWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 16px; */
+  margin-top: 20px;
+}
+.thisisAWraper {
+  flex: 1 1 22%; /* 4 in a row */
+  min-width: 280px;
+  max-width: 305px;
+}
+
+.businessCardOuterStories {
+  border: 2px solid #E6D3C4;
+  
+  background: white;
+  width: 305px;
+   min-height: 350px;
+  /* height: auto; */
+  margin: 10px auto;
+}
+
+.businessCardStories {
+  overflow: hidden;
+  background: #fff;
+}
+
+.imageWrapperStories {
+  background-color: #FBEAEA;
+  border: 1px solid #FFECCC;
+  position: relative;
+  width: 100%;
+}
+
+.businessImageStories {
+  padding: 3px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.leftTOpShow {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E7C58A;
+  color: #FFFFFF;
+  font-family: 'Inter';
+  font-size: 11px;
+  padding: 2px 12px;
+  border-radius: 14px;
+}
+
+.cardContentStories {
+  padding: 8px;
+}
+
+.NameStories {
+  font-family: 'Adamina';
+  font-weight: 400;
+  font-size: 12px;
+  color: #0A1A35;
+}
+
+.StoriesSubText {
+  font-family: 'Adamina';
+  font-size: 11px;
+  line-height: 20px;
+  color: #666666;
+}
+
+
+.shareBtnStories{
+   width: 54px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: #E7C58A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.shareClStories{
+  font-size: 30px;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.shareBtnFeature{
+   width: 86px;
+   height: 38px;
+   border-radius: 50%;
+   background-color: #E7C58A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.shareClFeature{
+  font-size: 24px;
+  color: #fff;
+  /* transform: rotate(45deg); */
+}
+@media (max-width: 768px) {
+  .cardsRowWrapper {
+    justify-content: center !important;  /* center children */
+  }
+
+  .thisisAWraper {
+    flex: none;              /* don’t stretch */
+    width: 100%;             /* full available width */
+    max-width: 305px;        /* but limit card size */
+    margin: 0 auto;          /* center horizontally */
+  }
+}
+
+
+

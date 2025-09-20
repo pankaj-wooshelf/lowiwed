@@ -1,0 +1,239 @@
+.allOrdersContainer {
+  background-color: #f8f4ef;
+  /* border: 1px solid #BCC1CA; */
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
+.forHeadAndFiterinputMain {
+  border-bottom: 1px solid #bcc1ca;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 26px;
+  line-height: 38px;
+  color: #666666;
+}
+
+.searchInput {
+  max-width: 200px;
+  height: 36px;
+  border-radius: 6px 0px 0px 6px;
+  padding: 4px 15px;
+  border: 1px solid #ccc;
+}
+.searchInput:focus {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+.Searchbtn {
+  background-color: #e6b8bf;
+  border-radius: 0px 6px 6px 0px;
+  width: 70px;
+  height: 36px;
+  border: none;
+}
+.Searchbtn:hover,
+.Searchbtn:active {
+  background-color: #ea3374 !important;
+}
+
+.filterBtn {
+  background-color: transparent;
+  color: #e6b8bf;
+  border: none;
+  font-weight: 500;
+}
+.filterBtn:hover,
+.filterBtn:active {
+  background-color: transparent !important;
+  color: #e6b8bf;
+}
+
+.orderCard {
+  height: 286px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+}
+
+.statusIcon {
+  width: 10px;
+  height: 10px;
+  background-color: #1db55c;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: 22px;
+  bottom: 4px;
+}
+.DeleverMain {
+  display: flex;
+  gap: 4px;
+  line-height: 5px;
+  flex-direction: column;
+}
+.locationHBC {
+  color: #ea3374;
+}
+.statusAndO {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.statusText {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  font-weight: 500;
+}
+.statusText2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323842;
+}
+.delevermaindata {
+  font-family: "Inter";
+  color: #717171;
+  font-size: 12px;
+  font-weight: 400;
+}
+.imageMakeupPho {
+  width: 161px;
+  height: 166px;
+}
+.orderDetaolsMain {
+  min-height: 192px;
+  margin-top: 8px;
+  margin-left: 1px;
+  padding: 10px 0px;
+  text-align: flex-end;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+}
+.orderDetaolsMain h6 {
+  color: #171a1f;
+  line-height: 22px;
+  font-size: 14px;
+}
+.forRoseGoldHM {
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171a1f;
+}
+.forPargraphMianHBL {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pargraphContent {
+  font-family: "Inter";
+  color: #717171;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.forOrderAndLehngaMian {
+  display: flex;
+  flex-direction: column;
+}
+.pargraphContent2 {
+  font-family: "Inter";
+  color: #323842;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+}
+.pargraphContent3 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 20px;
+  color: #323842ad;
+}
+.vendorLink {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 4px;
+  /* font-size: 13px; */
+  color: #717171;
+}
+
+.vendorLink span {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ea3374;
+}
+.forRightSideContentFixMian {
+  min-height: 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainDivForContainerboxN {
+  min-width: 846px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  /* border-radius: 12px; */
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+}
+.forRightSideContentFixMian2 {
+  min-height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orderDetailC {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: #171a1f;
+}
+
+.statusDelivered {
+  color: #171a1f;
+  font-weight: 500;
+}
+
+.stars {
+  /* width: 20px;
+  height: 20px; */
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.forStarRatingNow {
+  font-size: 16px;
+  color: #dee1e6;
+}
+.linkBtn {
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: none;
+  color: #171a1f;
+}
+
+.linkBtn:hover,
+.linkBtn:active {
+  color: #e7c58a !important;
+}

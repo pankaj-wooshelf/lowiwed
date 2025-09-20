@@ -1,0 +1,117 @@
+
+.accountBtn {
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  background: transparent !important;
+  border: none !important;
+}
+
+.accountBtn:hover {
+  text-decoration: none;
+  color: #c28a92;
+}
+.noCaret::after {
+  display: none !important;
+}
+.dropdownMenu{
+    width: 300px;
+    border: none !important;
+    box-shadow: 0px 17px 35px 0px #E8618C3D, 0px 0px 2px 0px #E8618C1F;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2000;
+}
+.accountDropdown .dropdown-menu {
+  border: none !important; /* This forces it */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+ /* optional: keep soft shadow */
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  right: 0;
+  left: auto;
+  background-color: #fff;          /* optional: control background */
+}
+
+.forloginborder{
+  background-color: #E7C58A;
+  color: #FFFFFF;
+  height: 36px;
+  width: 91px;
+  border: 1px solid #E7C58A;
+  border-radius: 23px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.userInfo {
+    border: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    color: #666666;
+  padding: 6px 12px;
+  font-weight: 500;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+.userInfo p{
+  font-size: 20px;
+    font-family: 'Inter';
+    /* line-height: 36px; */
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+
+}
+.pforphoneNumber{
+  font-size: 20px;
+    font-family: 'Inter';
+    line-height: 32px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+
+}
+
+.dropdownSection {
+  padding: 0px 20px;
+}
+
+.dropdownSection strong {
+    font-family: 'Inter';
+    font-weight: 700;
+    line-height: 36px;
+  display: block;
+  /* margin-bottom: 6px; */
+  font-size: 16px;
+  color: #666666;
+}
+
+.dropdownSection a{
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 10px;
+}
+.dropdown-item {
+  padding: 6px 0;
+  font-size: 12px;
+}
+
+@media (max-width: 428px) {
+  .forloginborder{
+    display: none !important;
+  }
+}

@@ -1,0 +1,111 @@
+.MainContainer{
+    height: 650px;
+}
+.featuredSection {
+  background: url('/Images/MemberBg.png');
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:410px;
+     position: relative;
+  z-index: 1;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* padding: 0px 60px; */
+  /* background: #fff; */
+}
+
+.heading {
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  /* margin-bottom: 30px; */
+  /* font-weight: 500; */
+}
+
+.heading span {
+  color: #E6B8BF;
+}
+
+.filtersWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+  /* display: flex; */
+  /* gap: 65px; */
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  font-family: 'Inter';
+  font-weight: 400;
+  border-radius: 20px;
+  border: 1px solid #E6B8BF;
+  /* margin: 30 0px; */
+  color: #E6B8BF;
+  padding: 5px 32px;
+  margin: 0px 25px;
+  background: transparent;
+}
+
+.filterBtn.active,
+.filterBtn:hover {
+  background: #E6B8BF;
+  color: #fff;
+  border-color: #00000000;
+}
+.featuredIcon{
+  transform: rotate(110deg);
+}
+.placeCard {
+  border: 1px solid #e7c58a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.placeCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardImg {
+  height: 220px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+}
+.starHY{
+  font-size: 14px;
+}
+.vendorInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.vendorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .cardImg {
+    height: 180px;
+  }
+}

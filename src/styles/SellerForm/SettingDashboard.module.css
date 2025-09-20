@@ -1,0 +1,222 @@
+.wrapper {
+  background-color: #F8F4EF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+  border-radius: 8px;
+}
+.headingPreference{
+font-style: Bold;
+font-size: 24px;
+
+line-height: 28px;
+
+  color: #333333;
+}
+
+.subText {
+  color: #737373;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+  margin-bottom: 20px;
+}
+.emailFor{
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+
+  color: #333333;
+}
+.headingInputMainBox{
+  height: 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+.IconFortext{
+  border: none;
+  background-color: transparent;
+  color: #242524;
+}
+.InputTextH{
+  border: none;
+  background-color: transparent;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+color: #333333;
+
+
+}
+.InputTextH:focus{
+  box-shadow: none;
+}
+.changeEmail {
+  padding: 0px 20px;
+  color: #6D2E46;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+
+  cursor: pointer;
+}
+.CheckboxH{
+font-style: Regular;
+font-size: 17px;
+line-height: 28px;
+color: #171A1F;
+}
+.saveBtn {
+  background-color: #E7C58A;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 18px;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+
+  margin-top: 15px;
+}
+
+.saveBtn:hover {
+  background-color: #e8b76c;
+}
+
+
+/* Display Preferance is here  */
+
+/* .wrapper {
+  background-color: #faf5ef;
+  border-radius: 12px;
+} */
+.headingDisplayP{
+font-style: Bold;
+font-size: 24px;
+line-height: 28px;
+color: #333333;
+}
+.toggleCTMainHIMo{
+  width: 199px;
+  height: 36px;
+  background-color: #E7C58A;
+  border-radius: 18.5px ;
+  color: #FFFFFF !important;
+  display: flex;
+  align-items: center;
+  border: none;  
+}
+.activeToggleH{
+  width: 97.5px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #FFFFFF !important;
+  color: #E7C58A !important;
+  border: none !important;
+  margin: 0px 2px;
+  transition: all 0.2ms ease-in-out;
+}
+/* .activeToggleH:hover , .activeToggleH:active{
+ 
+   background-color: transparent !important;
+} */
+.activeToggleHNahi{
+   border: none;
+   color: #FFFFFF !important;
+   background-color: transparent;
+   /* margin: 0px  5px;  */
+}
+/* .activeToggleHNahi:hover .activeToggleHNahi:active{
+  color: #FFFFFF !important;
+   background-color: transparent ;
+} */
+ .toggleCTMainPubPri{
+   width: 119px;
+  height: 36px;
+  background-color: #E7C58A;
+  border-radius: 18.5px ;
+  color: #FFFFFF !important;
+  display: flex;
+  align-items: center;
+  border: none;  
+ }
+
+.toggleGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.toggleBtn {
+  background-color: #f3c78e !important;
+  border: none !important;
+  color: black !important;
+  border-radius: 20px !important;
+  padding: 6px 14px !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.toggleBtn.active {
+  background-color: #e4b369 !important;
+  color: white !important;
+}
+
+/* .saveBtn {
+  background-color: #f3c78e;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+} */
+
+/* .saveBtn:hover {
+  background-color: #e4b369;
+} */
+
+/* Danger Zone is here  */
+
+.wrapperDanger {
+  height: 222px;
+  background-color: #F8F4EF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+}
+.Dangerzone{
+font-style: Bold;
+font-size: 24px;
+line-height: 28px;
+  color: #333333;
+}
+.confirmPopup{
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+
+  color: #171A1F;
+}
+.inputForDanzerZone{
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+
+  color: #171A1F;
+}
+/* .deleteBtn {
+  background-color: #f3c78e;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.deleteBtn:hover {
+  background-color: #e4b369;
+} */

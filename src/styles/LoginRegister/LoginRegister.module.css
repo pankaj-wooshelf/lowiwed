@@ -1,0 +1,305 @@
+.modalWrapper :global(.modal-content) {
+      max-height: 80vh;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0px 17px 35px 0px #171A1F3D, 0px 0px 2px 0px #171A1F1F;
+
+  padding: 0;
+}
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1001;
+  text-decoration: none;
+}
+
+.closeBtn:hover {
+  color: #e6b8bf;
+  text-decoration: none;
+}
+
+.headingForm{
+  /* font-size: 28px; */
+    font-family: 'Adamina';
+    color: #9095A0;
+    font-weight: 400;
+}
+.imageWrap {
+    width: 280px;
+  height: 400px;
+    transform: rotate(5.6deg) translateX(-5%) translateY(4%);
+  padding: 10px;
+  background-color: #E6B8BF;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 8px; */
+}
+
+.girlImg{
+     width: 270px;
+     height: 400px;
+     border-bottom: 4px solid white;
+     transform: rotate(0deg);
+     transform: translateX(-5%) translateY(-98%) ;
+     object-fit: cover;
+}
+.SignUpHeading{
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 700;
+    color: #9095A0;
+    line-height: 42px;
+    font-style: Bold;
+}
+.mainFormInput{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.formLabalLogin{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #374151;
+}
+.formInput {
+    color: #8C8D8B !important;
+  background-color: transparent !important;
+  border: 1px solid #9CA3AF;
+  height: 36px;
+  display: flex;
+
+  font-family: 'Inter';
+  font-weight: 400;
+  border-radius: 6px;
+  /* padding: 10px; */
+  font-size: 14px;
+}
+.formInput::placeholder{
+    color: gray;
+}
+.formInput:focus{
+box-shadow: none;
+/* border: none; */
+}
+.registerBtn {
+  background-color: #E7C58A;
+  border: none;
+  font-family: 'Inter';
+  border-radius: 8px;
+  padding: 6px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  color: #FFFFFF;
+}
+.registerBtn:hover,
+.registerBtn:focus,
+.registerBtn:active,
+.registerBtn.active{
+  background-color: #E7C58A;
+}
+
+.AlreadyAcount{
+    display: inline-block;
+    
+}
+.AlreadyAcount p{
+    font-size: 15px;
+    color: #666666;
+}
+.AlreadyAcount span{
+    cursor: pointer;
+   color: #E8618C;
+}
+.contnueWithMain{
+line-height: 10px;
+}
+.contnueWithMainHeader{
+    font-family: 'Inter';
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 16px;
+    color: #666666;
+}
+.GoogleMain{
+    height: 50px;
+    background-color: #F8F9FA;
+    border: 1px  #BCC1CA;
+    box-shadow: 0px 8px 17px 0px #171A1F26,0px 0px 2px 0px #171A1F1F;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+
+}
+.imageGoo{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.headingGoogle{
+    margin-top: 7px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    color: #666666;
+    font-style: Bold;
+}
+
+/* .otpMainDivStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center;
+  align-self: center;
+} */
+.LoginCustomer{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-weight: Bold;
+    color: #9095A0;
+    font-size: 24px;
+    line-height: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginCustomer span{
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+@media (max-width: 1440px) {
+  .modalWrapper2 :global(.modal-content) {
+    min-height: 750px;
+  }
+}
+
+@media (max-width: 992px) {
+  .imageWrap2 {
+    width: 240px;
+    height: 360px;
+  }
+  .girlImg2 {
+    transform: translateY(-70%);
+  }
+}
+
+@media (max-width: 768px) {
+   .modalWrapper2 :global(.modal-content) {
+    min-height: 500px;
+  }
+  .closeBtn {
+    top: 5px;
+  }
+  .formLabel{
+    font-size: 11px;
+  }
+  .headingForm{
+    /* paint-order: 5px; */
+    font-size: 15px;
+  }
+  .imageWrap2 {
+    width: 160px;
+    min-height: 210px;
+  }
+  
+  .imageWrap2 {
+    width: 160px;
+    min-height: 310px;
+  }
+  
+  .girlImg {
+     width: 150px;
+     height: 400px;
+    transform: translateY(-52%);
+  }
+  .girlImg2 {
+     width: 150px;
+     height: 400px;
+    transform: translateY(-82%);
+  }
+  .closeBtn {
+    top: 5px;
+  }
+  .formLabel{
+    font-size: 11px;
+  }
+  .headingForm{
+    /* paint-order: 5px; */
+    font-size: 15px;
+  }
+  .imageWrap {
+    width: 160px;
+    height: 550px;
+  }
+  .girlImg {
+     width: 150px;
+     height: 540px;
+    transform: translateY(-102%);
+  }
+}
+
+@media (max-width: 576px) {
+    .headingForm{
+    font-size: 10px;
+  }
+  .modalWrapper2 :global(.modal-content) {
+    padding: 20px !important;
+    width: 90%;
+    margin: auto;
+     min-height: 750px;
+  }
+  .modalWrapper :global(.modal-content) {
+    padding: 20px !important;
+    width: 90%;
+    margin: auto;
+     min-height: 750px;
+  }
+
+  .closeBtn {
+  position: absolute;
+  top: -5px;  
+  right: -5px;
+   font-size: 22px;
+}
+ .headingForm{
+    /* paint-order: 5px; */
+    font-size: 8px;
+  }
+  .imageWrap2 {
+    display: none;
+  }
+}
+
+@media (max-width:340px){
+  .registerBtn {
+    font-family: 'Inter';
+    font-size: 9px;
+  } 
+   .inputHeading{
+  font-size: 12px;
+  line-height: 15px;
+}
+}
+
+@media (max-width:1440px){
+  .modalWrapper :global(.modal-content) {
+    /* min-height: auto; */
+      min-height: 700px;
+}
+}
+

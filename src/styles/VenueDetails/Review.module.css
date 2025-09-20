@@ -1,0 +1,291 @@
+.reviewHeading {
+  font-weight: 500;
+  color: #666666;
+  font-family: "Inter";
+  /* border: 1px solid #e6a874; */
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.writeReviewBtn {
+  width: 206px;
+  height: 48px;
+
+  border: 1px solid #e7c58a;
+  background-color: #ffffff;
+  color: #e6a874;
+  box-shadow: 0px 4px 9px 0px #171a1f1c, 0px 0px 2px 0px #171a1f1f;
+  border-radius: 29px;
+  /* padding: 3px 60px; */
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.writeReviewBtn:hover {
+  background-color: #e7bc73;
+  border: none;
+  color: white;
+}
+
+/* .reviewCard {
+  position: relative;
+  padding: 30px;
+  border: 1px solid #e6a874;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+} */
+
+/* .reviewBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.1;
+  z-index: 0;
+} */
+
+.reviewerImage {
+  width: 80px;
+  height: 80px;
+  background-color: #ced0f8;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+.paulina {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 32px;
+  line-height: 48px;
+  color: #171a1f;
+}
+.stars {
+  display: flex;
+  gap: 3px;
+  /* margin: 8px 0; */
+}
+.starforpulinSt {
+  color: #f3c63f;
+}
+.starforpulinSttwo {
+  color: #dee1e6;
+}
+/*
+.reviewText {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+}
+ */
+.Reviewpart {
+  height: 50px;
+  font-family: "Inter";
+  background-color: #ffffff;
+  width: 200px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0px 4px 9px 0px #171a1f1c, 0px 0px 2px 0px #171a1f1f;
+
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.Reviewpart p {
+  font-size: 28px;
+  line-height: 38px;
+  color: #e7bc73;
+}
+.mainContainerRow {
+  height: 364px;
+  border: 1px solid #e7c58a;
+  border-radius: 6px;
+}
+
+.forRevieButtonWriteMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageForReview {
+  background: url("/Images/MemberBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px #bcc1ca;
+  width: 100vw;
+  height: 450px;
+  position: relative;
+  z-index: 1;
+  /* transform: translateY(-235px); */
+}
+.ReviewComment {
+  width: 800px;
+  color: #171a1f;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-indent: 10px;
+
+  /* transform: translateY(-150px); */
+}
+.RowMainofTheRatingH {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.forRatingBoxHB {
+  width: 285px;
+  height: 237px;
+  background-color: #e7bc73;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forratingNumberMainH {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.RatingNumber {
+  width: 71px;
+  height: 68px;
+  font-style: Regular;
+  font-size: 48px;
+  line-height: 68px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.RatingOutOf {
+  /* font-family: Adamina;
+font-weight: 400; */
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.FaStarForRaingN {
+  color: #ffffff;
+  font-size: 24px;
+}
+.FaStarForRaingNTwo {
+  color: #dee1e6;
+  font-size: 24px;
+}
+/* .RatingRatingsN{
+   
+ } */
+
+/* here is the rating box and styles  */
+
+.rightBox {
+  padding: 10px 20px;
+}
+
+.recommend {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #666666;
+}
+
+/* Custom Range Slider */
+.rangeSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 192px;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  /* margin: 0 10px; */
+  background: #cfd2da; /* fallback grey */
+  transition: background 0.3s ease;
+}
+
+/* Track styling */
+.rangeSlider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 5px;
+  background: transparent; /* background JS se aa raha hai */
+}
+
+.rangeSlider::-moz-range-track {
+  height: 6px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+/* Thumb styling */
+.rangeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e7bc73;
+  cursor: pointer;
+  margin-top: -8px;
+  box-shadow: 0px 0px 1px 0px #636ae812, 0px 0px 2px 0px #636ae81f;
+}
+
+.rangeSlider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e7bc73;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 0px #636ae812, 0px 0px 2px 0px #636ae81f;
+}
+
+.ratingItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items:start; */
+}
+
+.label {
+  font-family: Adamina;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+}
+
+.sliderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin: 0px !important; */
+}
+.value {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #666666;
+}

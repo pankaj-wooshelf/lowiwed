@@ -1,0 +1,329 @@
+.florioContent{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  border-radius: 6px;
+  background: transparent;
+  /* color: #333; */
+  transition: all 0.3s ease;
+}
+.activeTab {
+  background: #FBEAEA;
+ border: 1px solid #FFFFFF  
+ /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+  /* color: #000; */
+}
+.florioContent span{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #505050;
+
+}
+.storFrontSidebar{
+    background: #F9F9F7;
+    border: 1px solid #FFFFFF;
+    height: 950px;
+}
+.ForFolderText{
+  padding: 10px 25px;
+  font-family: 'Archivo';
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+line-height: 28px;
+color: #736363;
+}
+.CardsFor{
+   height: 100px;
+   width: 240px;
+   background-color: #F2EBED;
+   box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+}
+
+.cardsFirstRow{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: #F2EBED;
+  border: 1px #F3F4F6;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.mainRowEnqFor{
+    border: 1px solid #E6B8BF;
+}
+.cardsFirstRow2{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: #EBF2F0;
+  border: 1px #F3F4F6;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardsFirstRow3{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: #F2F0EB;
+  border: 1px #F3F4F6;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardinsidemain{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.boxForRounded{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #E5769A33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded2{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #87B79933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded3{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #FFF7ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded span, .boxForRounded2 span, .boxForRounded3 span{
+  display: flex;
+    font-size: 24px;
+    color: #22C55E;
+}
+.GoEyeC{
+  color: #F472B6;
+}
+.callColor{
+  color: #F97316;
+}
+.span1{
+  font-family: 'Archivo';
+font-weight: 700;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #736363;
+}
+.span2{
+  font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+
+  color: #736363;
+}
+
+.Time{
+    color: #E5769A;
+}
+.headingRecentorder{
+    font-family: 'Archivo';
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+line-height: 28px;
+color: #736363;
+}
+.pdfandOther{
+    height: 34px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    color: #736363;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+color: #736363;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.ToggleBtn{
+    border: none;
+}
+
+.ToggleBtn:hover{
+   background-color: transparent;
+   color: #736363;
+}
+.CardForTable{
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.bgforTableHead{
+    padding: 10px !important;
+    border-radius: 6px !important;
+}
+.bgforTableHead th{
+    padding: 10px;
+background-color: #E6B8BF3D !important;
+}
+.BtnAction{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #EBF2F0;
+    border: none;
+}
+
+.TableBodyContent tbody td {
+    padding: 10px 20px;
+    color: #736363;
+  border-bottom: none !important;
+  font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+}
+.bgforTableHead th{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+    color: #736363;
+}
+
+/* pagination  */
+.forpaginationInEnq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.forpaginationInEnq span{
+    width: 33px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 1px solid #BCC1CA;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #171A1F;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+
+
+}
+
+/* here start the settings  */
+.headingDivSet{
+    height: 87px;
+}
+.headingSetting{
+    font-family: 'Archivo';
+font-weight: 400;
+font-style: Regular;
+font-size: 32px;
+line-height: 60px;
+color: #9095A0;
+}
+.headingOFSeEmailw{
+    font-family: 'Archivo';
+font-weight: 500;
+font-style: Medium;
+font-size: 25px;
+line-height: 35px;
+color: #7F7F7F;
+}
+
+.pfortexts{
+font-style: Regular;
+font-size: 15px;
+line-height: 21px;
+color: #9095A0;
+}
+.formInputSettong:focus, .formInputSettong:active , .formInputSettong:hover{
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btnforEmails{
+    background-color: #E7C58A;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+line-height: 24px;
+color: #FFFFFF;
+border: none;
+}
+.btnforEmails:hover , .btnforEmails:active{
+  background-color: #E6B8BFFA !important;
+  color: #FFFFFF !important;
+}
+.forDiscardN{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.PendingboxShowing{
+    width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #E5769A;
+}
+.RespondedboxShowing{
+    width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #8D6B7B;
+}
+.BookedboxShowing{
+    width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #87B799;
+}
+.DiscardboxShowing{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #8D6B7B;
+}

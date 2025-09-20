@@ -1,0 +1,235 @@
+
+.modalWrapper :global(.modal-content) {
+    /* min-height: auto; */
+      /* max-width: 50vw; */
+      /* width: 70%; */
+      align-self: center;
+      max-height: 95vh;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  background-color: #fff;
+  margin: 0px 80px;
+ 
+}
+.FormMainContainer{
+    background-color: #FFFFFF;
+    width: 100%;
+    /* margin: auto; */
+    border: 2px solid #E7C58A;
+    box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+    /* padding: 10px; */
+
+}
+
+.FormMainContainer2Wraper{
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    max-height: 90vh;
+    border: 5px solid #E7C58A;
+    position: relative;
+}
+.formInput{
+    border: 1px solid #D0D0D0;
+    box-shadow: 0px 0px 1px 0px #171A1F12 , 0px 0px 2px 0px #171A1F1F;
+
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 24px;
+letter-spacing: 0%;
+color: #9CA3AF;
+
+}
+/* .formInput:active{
+    box-shadow: none;
+} */
+.formInput:focus{
+    box-shadow: none;
+    border: 1px solid #E7C58A;
+}
+/* .formInput::placeholder{
+    padding: 0;
+} */
+ 
+.logoOfBirdLowiwed{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    margin-right: 0; /* Ensure there's no extra margin */
+  display: block;
+    
+}
+.brandTextF{
+ margin-left: 0; /* Remove if any default margin exists */
+  font-family: 'Abhaya Libre';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #CFB07C;
+}
+
+.registerBtn{
+    width: 100px;
+    background-color: #E7C58A;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+.registerBtn:hover{
+    background-color: #E7C58A;
+}
+
+/* Secound Form vender Register  */
+
+.termCondition{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkboxH {
+  width: 14px;
+  height: 14px;
+  appearance: none;          /* Remove default styling */
+  -webkit-appearance: none;  /* Safari fix */
+  background-color: #F2F2FD;
+  border: 2px solid #E7C58A;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkboxH:checked {
+  background-color: #E6B8BF;
+  /* border: 1px solid #E6B8BF; */
+}
+
+.checkboxH:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -2px;
+  left: 1px;
+}
+
+.SpanForTermCondition{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 22px;
+letter-spacing: 0%;
+color: #E7C58A;
+}
+
+.BackBtn{
+    width: 119px;
+    border: 1px solid #E7C58A;
+    color: #E7C58A;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+.PreviewBtn{
+    width: 145px;
+    border: 1px solid #E7C58A;
+    color: #E7C58A;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+.RegisterBtn{
+    width: 140px;
+    background-color: #E7C58A;
+    color: #FFFFFF;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+
+}
+.BackBtn:hover , .PreviewBtn:hover , .RegisterBtn:hover{
+    background-color: #E7C58A;
+}
+
+/* Success Message Templete  */
+.modalWrapper2 :global(.modal-content) {
+      align-self: center;
+      max-height: 479px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  background-color: #fff;
+  margin: 0px 80px;
+ 
+}
+
+.headingSuccessMessage{
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+line-height: 36px;
+letter-spacing: 0%;
+color: #7F7F7F;
+}
+.paragraphThankYou{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #171A1F;
+}
+.teamsMessage{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: center;
+color: #7F7F7F;
+}
+
+.GoToHomePage{
+    width: 178px;
+    border: 1px solid #E7BC73;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0%;
+color: #E7C58A;
+
+}
+
+.GoToHomePage:hover{
+    background-color: #E7C58A;
+    transition: all ease-in 0.2s;
+}

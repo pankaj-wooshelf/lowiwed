@@ -1,0 +1,521 @@
+.headingDivSet{
+    height: 87px;
+}
+.headingSetting{
+    font-family: 'Archivo';
+font-weight: 400;
+font-style: Regular;
+font-size: 32px;
+line-height: 60px;
+color: #9095A0;
+}
+
+/* here started the card  */
+
+.cardsFirstRow{
+    /* width: 267px; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+ background-color: rgba(255, 242, 242, 0.22);
+border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.mainRowEnqFor{
+    border: 1px solid #E6B8BF;
+}
+.cardsFirstRow2{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(255, 242, 242, 1);
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardsFirstRow3{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(255, 251, 242, 1);
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardsFirstRow4{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(224, 224, 224, 1);
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardsFirstRow5{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100px;
+  background-color: rgba(242, 255, 242, 0.39);
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F;
+
+
+}
+.cardinsidemain{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.boxForRounded{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #FFE3E3;
+  border: 1px solid #FFBFBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded span{
+  color: #FF5757;
+}
+.boxForRounded3{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #FFF2E3;
+  border: 1px solid #EDDCBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded3 span{
+  color: #D2A057;
+}
+.boxForRounded4{
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #E3FFEB;
+  border: 1px solid #BFEDCD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded4 span{
+  display: flex;
+  color: #57D257;
+}
+/* .boxForRounded span, .boxForRounded2 span, .boxForRounded3 span{
+  display: flex;
+    font-size: 24px;
+    color: #22C55E;
+} */
+/* .GoEyeC{
+  color: #F472B6;
+}
+.callColor{
+  color: #F97316;
+} */
+.span1{
+  font-family: Archivo;
+font-weight: 700;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #736363;
+}
+.span2{
+  font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+
+  color: #736363;
+}
+
+/* .Time{
+    color: #E5769A;
+} */
+
+.CollectReviewBtnH{
+  background-color: #E7C58A;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 22px;
+  border: none;
+  position: relative;
+  top: 30px;
+  right: 90px;
+}
+.CollectReviewBtnH:hover , .CollectReviewBtnH:active {
+   background-color: #E7C58A !important;
+  color: #FFFFFF;
+}
+/* here satrt the table  */
+.MainForAllCusmersMainD{
+  display: flex;
+  gap: 25px;
+}
+.AllCustomerTextM{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.AllCustomerTexHB{
+color: #7F7F7F;
+line-height: 20px;
+font-size: 18px;
+display: flex;
+}
+.forFormInputMain{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.groupingFormmian{
+  width: 400px;
+  border: 1px solid #E5E7EB;
+  background-color: #F9FAFB;
+  border-radius: 6px;
+}
+.iconsInputofForm{
+  border: none;
+  background-color: #FFFFFF;
+}
+.iconsInputofFormListing{
+  border: none;
+}
+.iconsInputofFormListing:hover , .iconsInputofFormListing:focus{
+    box-shadow: none;
+    border: none;
+}
+.CardForTable{
+    border: none;
+    border-radius: 8px;
+}
+
+
+.bgforTableHead{
+    padding: 10px !important;
+    border-radius: 6px !important;
+}
+
+.bgforTableHead th{
+  text-align: center;
+    padding: 20px;
+    background-color: rgba(230, 184, 191, 0.24) !important;
+}
+.BtnAction{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #EBF2F0;
+    border: none;
+}
+
+.TableBodyContent tbody td {
+    padding: 10px 20px;
+    color: #736363;
+  border-bottom: none !important;
+  font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+}
+.bgforTableHead th{
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 20px;
+    color: #736363;
+}
+
+
+/* Here Start the Reve Collecter Form  */
+
+/* .supportWrapper {
+  background: #F8F4EF;
+  padding: 40px 20px;
+  border-radius: 8px;
+} */
+.headingRaiseingSupport{
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 22px;
+line-height: 32px;
+letter-spacing: 0%;
+color: #9095A0;
+}
+.pforCustomise{
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 20px;
+}
+.LabelOfForms{
+    font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #4A4A4A;
+}
+.inputSubject{
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.inputSubject span{
+    font-size: 14px;
+    color: #A0A0A0;
+    margin: -15px 0px;
+}
+.forminputH{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #A0A0A0;
+}
+/* .forminputH::placeholder{
+    
+} */
+ .addBtn{
+  margin-top: 32px;
+  margin-left: -12px;
+  width: 75px;
+  height: 36px;
+  background-color: #E7C58A;
+  border: none;
+  border-radius: 0px 6px 6px 0px;
+  color: #FFFFFF;
+ }
+
+.forminputH:focus{
+    box-shadow: none;
+}
+.InsidemessageSelectfield{
+    border: none;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.InsidemessageSelectfield:focus{
+  box-shadow: none;
+}
+.messageiconsimportant{
+    object-fit: cover;
+}
+.AFormSelectMessage{
+    background-color: #FFD70033;
+    font-family: 'Inter';
+    font-weight: 400;
+    padding-right: 1.5rem; /* gives space for dropdown arrow */
+    background-position: right 0.25rem center !important; /* move arrow closer */
+    background-size: 10px 10px !important; /* make arrow smaller */
+    height: 32px; /* optional: make height smaller */
+    line-height: 1.2;
+    font-size: 14px;
+    border: 1px solid #FFD700;
+}
+
+.AFormSelectMessage:focus{
+    box-shadow: none;
+}
+.formsCMemmsageMainBoxText{
+    border: 1px solid #D0D0D0;
+}
+.formsCMemmsageMainBoxText:focus{
+    box-shadow: none;
+    border: 1px solid #D0D0D0;
+}
+.editorToolbar {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-bottom: none;
+  padding: 8px 12px;
+  border-radius: 4px 4px 0 0;
+}
+
+.toolbarIcons {
+  display: flex;
+  gap: 6px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.customFileLabel {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+}
+
+.customFileLabel::placeholder{
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #A0A0A0;
+
+}
+.iconUser{
+    font-size: 12px;
+    color: #A0A0A0;
+}
+.emailIcon{
+    font-size: 18px;
+    color: #A0A0A0;
+}
+textarea.form-control {
+  border-radius: 0 0 4px 4px;
+}
+
+.submitBtn {
+    font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+  background-color: #E7C58A;
+  border: none;
+  padding: 10px 34px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.submitBtn:hover,.submitBtn:active{
+    background-color: #E7C58A;
+}
+
+/* Here Start the Reviews Cards   */
+.toggleCTMain{
+  height: 40px;
+  background-color: #E7C58A !important;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 0px 4px;
+  /* border: 1px solid #000000; */
+}
+.ToggleCard{
+  height: 36px !important;
+  background-color: #FFFFFF !important;
+  border-radius: 6px;
+  color: #E7BC73 !important;
+  border: none;
+}
+.ToggleCardC{
+  height: 36px !important;
+  background-color: transparent !important;
+  border-radius: 6px;
+  color: #FFFFFF !important;
+  border: none;
+}
+.Body1Main{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.reviewCardH {
+  /* border-top: 6px solid #E6B8BF; */
+  background-color: #E6B8BF;
+  min-height: 200px;
+  border: none;
+  border-radius: none !important;
+}
+.revewCardinsideM{
+  margin-top: 10px;
+  height: 205px;
+  border: 1px solid #BCC1CA;
+ background-color: #F8F4EF;
+ box-shadow: 0px 2px 5px 0px #171A1F17, 0px 0px 2px 0px #171A1F1F;
+
+}
+
+.userImage {
+  background-color: #CED0F8;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ratingsAndLocmain{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 5PX;
+}
+.MainTitleOgCardAndLR{
+  line-height: 10px;
+}
+.cardTitle {
+  margin-bottom: 0.2rem;
+  font-size: 20px;
+  line-height: 30px;
+  color: #323842;
+  font-style: Bold;
+}
+.locationName{
+  color: #9095A0;
+}
+.RatingSHai{
+  font-size: 21px;
+}
+.cardDescription {
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.cardDescription P{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: Bold;
+  color: #9095A0;
+  font-size: 12px;
+  line-height: 16px;
+}

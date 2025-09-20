@@ -1,0 +1,261 @@
+.businessMainFeature {
+  min-height: 556px;
+}
+.innerBusinessCardFeature {
+  width: 100%;
+  border: 1px solid #e7c58a;
+}
+.businessesSectionFeature {
+  background: url("/Images/MemberBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 20px 0px !important; */
+  /* height:410px; */
+  min-height: 440px;
+  position: relative;
+  z-index: 1;
+}
+.benefitTitle2Feature {
+  color: black;
+}
+
+.cardsRowWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  /* transform: translateY(50px); */
+}
+
+.thisisAWraper {
+  flex: 1 1 auto;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.businessCardOuterFeature {
+  border: 2px solid #e6d3c4;
+  background: #ffffff;
+  width: 100%;
+  max-width: 305px;
+  min-height: 350px; /* allows growth if content is taller */
+  margin: 10px;
+}
+
+.businessCardFeature {
+  overflow: hidden;
+  background: #fff;
+}
+
+.imageWrapperFeature {
+  background-color: #fbeaea;
+  border: 1px solid #ffeccc;
+  position: relative;
+  width: 100%;
+}
+
+.businessImageFeature {
+  padding: 3px;
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.heartIconFeature {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.heartIFeature {
+  /* background-color: #fff; */
+  color: #fff;
+  font-size: 35px;
+}
+/* .cardContentFeature {
+  padding: 8px;
+} */
+
+.innerContentsH {
+  padding: 0px 6px;
+}
+.forpreweddingIcon {
+  font-size: 16px;
+  color: #666666;
+}
+.NameFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 15px;
+  color: #0a1a35;
+}
+
+.ratingBoxFeature {
+  font-family: "Inter";
+  background: #e7c58a;
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.StarFeature {
+  color: #fff;
+  font-size: 20px;
+  /* background-color: #fff; */
+}
+.priceTextFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.ImageProfiFeature {
+  background: #ced0f8;
+  border: 1px #636ae8;
+}
+.forpreweddingIconMoney {
+  font-size: 14px;
+  color: #e7c58a;
+}
+.forpreweddingIconreview {
+  font-size: 14px;
+  color: #e7c58a;
+}
+
+.formainContentofFeature {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.FeatureSubText {
+  font-family: "Adamina";
+  font-size: 14px;
+  /* line-height: 22px; */
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+/* .dividerFeature {
+  
+  border-top: 2px solid #E7C58A;
+  
+} */
+.forLocationANdOther {
+  padding: 5px 10px;
+  width: 100%;
+  border-top: 1px solid #e7c58a;
+}
+.shareBtnFeature {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e7c58a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareClFeature {
+  width: 30px;
+  height: 30px;
+  /* display: flex; */
+  /* font-size: 22px; */
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  /* transform: rotate(20deg); */
+}
+.profiAndTextFeat {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.businessNameFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 33px;
+  color: #0a1a35;
+}
+
+.locationIconIs {
+  font-size: 12px;
+}
+.locationFeature {
+  font-family: "Adamina";
+  font-size: 10px;
+  color: #666666;
+}
+
+.ukTextFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  color: #666666;
+  /* padding-top: 15px; */
+  /* position: absolute;
+  bottom: -10px; */
+}
+
+@media (max-width: 768px) {
+  .cardsRowWrapper {
+    flex-direction: column;
+    align-items: center; /* center cards */
+    gap: 20px;
+  }
+
+  .thisisAWraper {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .businessCardOuterFeature {
+    margin: 0 auto; /* center card */
+  }
+}
+
+@media (max-width: 460px) {
+  .businessCardOuterFeature {
+    height: auto !important; /* force to grow */
+    min-height: unset !important; /* remove any preset min-height */
+  }
+
+  .cardsRowWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .thisisAWraper {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+}

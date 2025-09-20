@@ -1,0 +1,308 @@
+.benefitsSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.flowerImg{
+  border: 1px #BCC1CA;
+}
+.benefitsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 20px;
+  color: #E6B8BF;
+  font-family: 'Adamina', serif;
+}
+
+.line {
+    width: 70px;
+  flex: 1;
+  border: 3px solid #E6B8BF;
+  height: 0;
+  max-width: 150px;
+}
+
+.benefitCard{
+    /* padding: 0%; */
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    box-shadow: 0px 17px 35px 0px #171A1F3D ,0px 0px 2px 0px #171A1F1F;
+}
+
+.businessMain {
+  min-height: 613px;
+  margin-top: 40px;
+  padding-top: 20px;
+  
+}
+.innerBusinessCard{
+  width: 100%;
+  border: 1px solid #E7C58A;
+}
+.headingOfBestDeal{
+    font-size: 24px;
+}
+/* .businessesSection {
+  height: 330px;
+  background: url('../../public/Images/Bg_GrothSec.jpg') no-repeat left center;
+  background-size: contain;
+  position: relative;
+  padding: 15px;
+
+  position: relative;
+  z-index: 1;
+} */
+.businessesSection {
+    background-image: url('/Images/Bg_GrothSec.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:400px;
+     position: relative;
+  z-index: 1;
+  }
+.benefitTitle2{
+  color: black;
+}
+.businessMonthlyH{
+  margin-top: -60px;
+}
+.businessCardOuter {
+  /* width: 100%; */
+  max-width: 305px;
+  background: #FFFFFF;
+  border: 1px solid #E7C58A;
+  border-radius: 12px;
+  box-shadow: 0px 17px 35px 0px #171A1F3D, 0px 0px 2px 0px #171A1F1F;
+  padding: 4px;
+  /* max-height: 390px; */
+  margin: 10px auto;
+
+}
+
+.businessCard {
+  /* border: 1px solid #E6D3C4; */
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.imageWrapper {
+  border: 2px solid #E6D3C4;
+  padding: 3px;
+  position: relative;
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+
+}
+
+.businessImage {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.heartIcon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+.heartI{
+  /* background-color: #fff; */
+  color: #fff;
+  font-size: 30px;
+}
+.cardContent {
+  padding: 12px;
+}
+
+.categoryName {
+  font-family: 'Adamina';
+  font-weight: 400;
+  font-size: 16px;
+  color: #0A1A35;
+}
+
+.ratingBox {
+  background: #E7C58A;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.Star{
+  color: #fff;
+  font-size: 20px;
+  /* background-color: #fff; */
+}
+.priceText {
+  font-family: 'Adamina';
+  font-size: 12px;
+  color: #666666;
+}
+.ImageProfi{
+  background: #CED0F8;
+  border: 1px #636AE8;
+}
+
+.ratingCount {
+    font-family: Adamina;
+    font-weight: 400;
+    line-height: 16px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.divider {
+  border-top: 2px solid #E7C58A;
+  margin: 8px 0;
+}
+.shareBtn{
+   width: 54px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: #E7C58A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.shareCl{
+  font-size: 30px;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.businessName {
+  font-family: 'Adamina';
+  font-weight: 400;
+  font-size: 14px;
+  /* line-height: 33px; */
+  color: #0A1A35;
+}
+
+.location {
+  font-family: 'Adamina';
+  font-size: 13px;
+  color: #555;
+}
+
+.ukText {
+  font-family: 'Adamina';
+  font-weight: 400;
+  color: #222;
+  /* padding-top: 15px; */
+  /* position: absolute;
+  bottom: -10px; */
+}
+.BridalP{
+    width: 100px;
+    height: 23px;
+    background: #E7C58A;
+    border-radius: 12px;
+    border: 1px #00000000;
+    position: absolute;
+  bottom: 3px;
+  right: 3px;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+.BridalP p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 10px;
+    /* line-height: 16px; */
+    color: #FFFFFF;
+}
+/* offer badges  */
+.ButtonOffer {
+  background-color: transparent !important;
+  position: absolute;
+  top: 20px;
+  left: 105px;
+  z-index: 10;
+}
+
+.OfferDetails {
+  /* background-image: url('/Images/ButtonH.png'); */
+  background-repeat: no-repeat;
+  font-family: 'Adamina';
+  font-weight: 400;
+  background-size: contain;
+  background-position: center;
+  color: #E7BC73;
+  border: 4px solid #E7BC73 !important;
+  border-radius: 21px;
+  outline: none !important;
+  font-size: 12px;
+  width: 110px;  /* <-- set your image width exactly */
+  height: 30px; /* <-- set your image height exactly */
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #FFFFFF !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* line-height: 1; */
+  cursor: pointer;
+}
+
+/* .OfferDetails span {
+  background: transparent !important;
+  position: relative;
+  z-index: 2;
+} */
+
+.OfferDetails::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: transparent !important; */
+  border-radius: inherit;
+}
+
+@media (max-width:428px){
+   /* for the heading Size  */
+
+   .benefitsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 14px;
+  color: #E6B8BF;
+  font-family: 'Adamina', serif;
+}
+
+.line {
+    width: 50px;
+  flex: 1;
+  border: 3px solid #E6B8BF;
+  height: 0;
+  max-width: 150px;
+}
+.benefitTitle2{
+  color: black;
+}
+}

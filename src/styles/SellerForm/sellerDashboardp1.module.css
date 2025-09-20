@@ -1,0 +1,770 @@
+/* .dashboardWrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.sidebar {
+  width: 220px;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.mainContent {
+  flex: 1;
+  background: #fff;
+}
+
+.cardTag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.chartPlaceholder {
+  height: 220px;
+  background: #eef2f7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+} */
+.sidebar {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  height: 100vh;
+  background: #f9f9f9; /* or whatever you use */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  /* height: 100vh; */
+  /* background: #FBEAEACC; */
+  /* border: 1px solid #FBEAEA; */
+  /* box-shadow: 0px 0px 1px 0px #171A1F12, 0px 0px 2px 0px #171A1F1F; */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  scroll-behavior: smooth;
+}
+.sidebar::-webkit-scrollbar {
+  width: 1px; /* thin scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: pink; /* scrollbar color */
+  border-radius: 10px; /* rounded edges */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent; /* remove track background */
+}
+.sidebar::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* For Firefox */
+.sidebar {
+  scrollbar-width: thin; /* makes it thin */
+  scrollbar-color: pink transparent;
+}
+
+.mainContent {
+  /* margin-left: 241px;       */
+  /* height: 100vh;        */
+  /* width: calc(100% - 241px); */
+
+  overflow-y: auto;
+  overflow-x: hidden; /* ✅ main content scrolls separately */
+  padding: 10px;
+}
+
+.sidebarDashboard {
+  height: 997px;
+  /* width: 241px; */
+  background-color: #fbeaeacc;
+  border: 1px solid #fbeaea;
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+}
+.logoOfBirdLowiwed {
+  position: absolute;
+  top: 10px;
+  left: 10;
+}
+.brandTextF {
+  margin-left: 0; /* Remove if any default margin exists */
+  font-family: "Abhaya Libre";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  color: #cfb07c;
+}
+.navItem {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #9095a0;
+}
+.activeNavItem {
+  height: 35px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+
+  /* border-left: 4px solid #E6B8BF; */
+  color: #9095a0;
+}
+.navItem span {
+  color: #9095a0;
+}
+
+/* Navbar started Here  */
+
+.Navbarmainbox {
+  height: 62px;
+  background-color: #ffffff;
+  border: 1px #f3f4f6;
+  box-shadow: 0px 2px 5px 0px #171a1f17, 0px 0px 2px 0px #171a1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.DashboardnavHead {
+  display: flex;
+  gap: 28px;
+}
+.DashboardnavHead p {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #9095a0;
+}
+.DashboardnavHead span {
+  width: 3.319999933242798px;
+  height: 14.979999542236328px;
+  color: #9095a0;
+}
+
+.RighsideNavbar {
+  width: 600px;
+
+  display: flex;
+  justify-content: space-around;
+}
+.SearchBarMainBox {
+  min-width: 370px;
+  height: 30px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #8c8d8b;
+  box-shadow: 0px 2px 5px 0px #171a1f17, 0px 0px 2px 0px #171a1f1f;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.SearchIconForNav {
+  font-size: 16px;
+}
+.inputbox {
+  border: none;
+  box-shadow: none;
+  background-color: #f9fafb;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  color: #8c8d8b;
+}
+.inputbox:hover {
+  box-shadow: none !important;
+  border: none !important;
+}
+.inputbox:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.notification {
+  display: flex;
+  padding-top: 5px;
+  /* justify-content: center; */
+  font-size: 20px;
+  color: #9ca3af;
+}
+.MessageH {
+  display: flex;
+  padding-top: 5px;
+  font-size: 20px;
+  color: #9ca3af;
+}
+.FandFlorio {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.F {
+  width: 32px;
+  height: 32px;
+  background-color: #f3f4f6;
+  border: 1px #ffffff;
+  border-radius: 16px;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #374151;
+}
+.Florio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #1f2937;
+}
+/* here First row first col  */
+.cardForFirstRowColWelcome {
+  border: 1px solid #f3f4f6;
+  height: 144px;
+  box-shadow: 0px 8px 17px 0px #171a1f26, 0px 0px 2px 0px #171a1f1f;
+}
+.headingOfwelcomeNick {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #1f2937;
+}
+.pForWelcome {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0%;
+  color: #4b5563;
+}
+.UpgradeBtn {
+  width: 126px;
+  height: 36px;
+  background-color: #e6b8bf;
+  border: none;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.UpgradeBtn:hover {
+  background-color: #e6b8bf;
+}
+.imageProfileForSeller {
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  background-color: #ced0f8;
+
+  /* border-radius: ; */
+}
+.cardsFirstRow {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 106px;
+  background-color: #ffffff;
+  border: 1px #f3f4f6;
+  box-shadow: 0px 4px 9px 0px #171a1f1c, 0px 0px 2px 0px #171a1f1f;
+  /* box-shadow: 0px 4px 9px 0px #171A1F1C, 0px 0px 2px 0px #171A1F1F; */
+}
+.cardinsidemain {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.boxForRounded {
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #dcfce7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded2 {
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #fdf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded3 {
+  width: 46px;
+  height: 46px;
+  border-radius: 28px;
+  background: #fff7ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxForRounded span,
+.boxForRounded2 span,
+.boxForRounded3 span {
+  display: flex;
+  font-size: 24px;
+  color: #22c55e;
+}
+.GoEyeC {
+  color: #f472b6;
+}
+.callColor {
+  color: #f97316;
+}
+.span1 {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #1f2937;
+}
+.span2 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+
+  color: #4b5563;
+}
+.ParaWithSpan {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #9ca3af;
+}
+.span3 {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #16a34a;
+}
+
+/* graph of dashboard  */
+.analyticsContainer {
+  height: 390px;
+  width: 564px;
+  background: #ffffff;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+}
+
+.dropdownToggle {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  /* font-size: 14px; */
+  padding: 6px 22px;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #4b5563;
+}
+.Analytics {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #4b5563;
+}
+.TooltipH {
+  .TooltipH {
+    background-color: #fff !important; /* Set your desired background */
+    border: 1px solid #ddd !important;
+    color: #333 !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* herre satart exclusive in Dashboard  */
+.ExclusiveOffer {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #9095a0;
+}
+
+.cardsRowWrapper {
+  display: flex;
+}
+/* .thisisAWraper {
+  flex: 1 1 22%; 
+  min-width: 280px;
+  max-width: 305px;
+} */
+
+.activeCard {
+  border: 3px solid #ffeccc;
+}
+
+.thisisAWraper {
+  min-width: 300px;
+  height: 320px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.businessCardOuterFeature {
+  border: 1px solid #ffeccc;
+  border-radius: 6px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 300px;
+  height: 305px;
+  margin: 10px;
+}
+
+.discountBadge {
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #ff512f, #f09819);
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 10;
+  font-family: "Adamina";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.discountBadge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  transform: skewX(-20deg);
+  animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.businessCardFeature2 {
+  height: 310px !important;
+  border: 1px solid #e6d3c4;
+  /* border-radius: 10px;  */
+  /* overflow: hidden;  */
+  /* background: #fff;  */
+}
+
+.imageWrapperFeature {
+  background-color: #fbeaea;
+  border: 1px solid #ffeccc;
+  position: relative;
+  width: 100%;
+}
+
+.businessImageFeature {
+  padding: 3px;
+  /* width: 100%; */
+  width: 290px;
+  height: 207px;
+  object-fit: cover;
+  display: block;
+}
+
+.heartIconFeature {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px;
+  border: 3px solid #ffe5e5;
+  border-radius: 50%;
+  /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); */
+}
+
+.heartIFeature {
+  /* background-color: #fff; */
+  color: #ffe5e5;
+  /* font-size: 30px; */
+}
+.offerbadges {
+  background: rgba(255, 255, 255, 0.8);
+  /* width: 100px; */
+  height: 24px;
+  border-radius: 12px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 16px;
+  color: #374151;
+}
+.boltIcon {
+  color: #f97316;
+}
+.WeddingsListIcon {
+  color: #22c55e;
+}
+.cardContentFeature {
+  padding: 2px 8px;
+}
+
+.NameFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 18px;
+  color: #0a1a35;
+}
+
+.ratingBoxFeature {
+  font-family: "Inter";
+  background: #e7c58a;
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 11px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.StarFeature {
+  color: #fff;
+  font-size: 20px;
+  /* background-color: #fff; */
+}
+.priceTextFeature {
+  font-family: "Adamina";
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ImageProfiFeature {
+  background: #ced0f8;
+  border: 1px #636ae8;
+}
+
+.FeatureSubText {
+  font-family: "Adamina";
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.starIconforRating {
+  color: #e7c58a;
+}
+
+.dividerFeature {
+  border-top: 2px solid #e7c58a;
+  margin: 8px 0;
+}
+.shareBtnFeature {
+  width: 54px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e7c58a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareClFeature {
+  font-size: 30px;
+  color: #fff;
+  transform: rotate(45deg);
+}
+.profiAndTextFeat {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.businessNameFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 33px;
+  color: #0a1a35;
+}
+
+.locationIconIs {
+  font-size: 12px;
+}
+.locationFeature {
+  font-family: "Adamina";
+  font-size: 10px;
+  color: #666666;
+}
+
+.ukTextFeature {
+  font-family: "Adamina";
+  font-weight: 400;
+  color: #666666;
+  /* padding-top: 15px; */
+  /* position: absolute;
+  bottom: -10px; */
+}
+
+/* Your Top Countries  */
+.CardForYourTopContries {
+  border: 1px #f3f4f6;
+  border-radius: 8px;
+  /* height: 294px; */
+  /* width: 358px; */
+  /* margin-top: -10px; */
+  box-shadow: 0px 0px 1px 0px #171a1f12, 0px 0px 2px 0px #171a1f1f;
+}
+.YourTopCountries {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1f2937;
+}
+.Mouneyuser {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #1f2937;
+}
+.Mouneyuser small {
+  font-family: Archivo;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #9ca3af;
+}
+.ullist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ullist li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #374151;
+}
+.percentageOf {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  color: #374151;
+}

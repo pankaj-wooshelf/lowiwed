@@ -1,0 +1,150 @@
+.mainContainerPromo{
+  height: 600px;
+}
+.featuredSection {
+  background-image: url('/Images/Bg_GrothSec.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:400px;
+     position: relative;
+  z-index: 1;
+  /* padding: 60px 0; */
+  /* background: #fff; */
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  color: #323842;
+  line-height: 56px;
+  margin-bottom: 30px;
+  /* font-weight: 500; */
+}
+
+/* .heading span {
+  color: #dca7a7;
+} */
+
+.filtersWrapper {
+  text-align: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  border-radius: 20px;
+  border: 1px solid #e7c58a;
+  color: #e7c58a;
+  margin: 5px;
+  background: transparent;
+}
+
+.filterBtn.active,
+.filterBtn:hover {
+  background: #dca7a7;
+  color: #fff;
+  border-color: #dca7a7;
+}
+
+.placeCard {
+  border: 1px solid #e7c58a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.placeCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardImg {
+  height: 220px;
+  object-fit: cover;
+}
+.ButtonOffer {
+  background-color: transparent !important;
+  position: absolute;
+  top: -20px;
+  left: 75px;
+  z-index: 2;
+}
+
+.OfferDetails {
+  /* background-image: url('/Images/ButtonH.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+  /* background-position: center; */
+  color: #E7BC73;
+  border: 3px solid  #E7BC73!important;
+  outline: none !important;
+  font-size: 12px;
+  padding: 0px 10px;
+  /* width: 110px; */
+  height: 42px; /* <-- set your image height exactly */
+  /* padding: 0 !important;
+  margin: 0 !important; */
+  font-family: 'Adamina';
+  background-color: #FFFFFF !important;
+  font-weight: 400;
+  font-size: 12px;
+  height: 36px;
+  border-radius: 18px;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.OfferDetails span {
+  font-family: 'Adamina';
+  background: transparent !important;
+  position: relative;
+  z-index: 2;
+}
+
+.OfferDetails::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent !important;
+  border-radius: inherit;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+}
+
+.vendorInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.vendorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.starHY{
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .cardImg {
+    height: 180px;
+  }
+}

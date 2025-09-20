@@ -1,0 +1,125 @@
+.sectionWrapper {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeading h2,
+.sectionHeading h3 {
+  color: #d89ca3;
+  font-family: serif;
+  font-weight: 500;
+}
+
+.decorLine {
+  width: 60px;
+  height: 1px;
+  background: #e3b6be;
+  margin: 10px 0;
+}
+
+/* .flowerDivider {
+  background: url("/images/flower-divider.png") no-repeat center;
+  background-size: contain;
+  width: 80px;
+  height: 40px;
+  margin: 10px 0;
+} */
+
+.venueCard {
+  background: #fce6e7;
+  padding: 25px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 250px;
+}
+.cityClass{
+font-size: 14px;
+/* font-family: ; */
+line-height: 33px;
+color: #E38E9C;
+}
+.venueCard span {
+  color: #b2767f;
+  font-weight: 500;
+}
+.shareBg{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #E7C58A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  color: #FFFFFF;
+  font-size: 16px;
+  transform: rotate(10deg);
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.emailInput {
+  /* height: 79px; */
+  border-radius: 25px 0 0 25px;
+  border: 1px solid #E6B8BF;
+  padding: 10px 20px;
+  width: 450px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.emailInput:focus{
+  box-shadow: none;
+    border: 1px solid #d89ca3;
+}
+
+.subscribeButton {
+  background: #e3b6be;
+  color: white;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  padding: 0px 40px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Inter';
+}
+.subscribeButton:hover , .subscribeButton:active{
+  background-color: #E7C58A !important;
+}
+
+@media (max-width: 576px) {
+  .venueCard {
+    max-width: 90%;
+  }
+
+  .newsletterForm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emailInput {
+    border-radius: 25px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+  .subscribeButton {
+    border-radius: 25px;
+    width: 90%;
+  }
+}

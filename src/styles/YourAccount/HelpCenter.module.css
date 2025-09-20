@@ -1,0 +1,572 @@
+.HelpSidebar {
+  height: 645px;
+  background: rgba(248, 249, 250, 0.52);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
+    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
+
+.MainTitleContain {
+  padding: 35px 0px;
+  /* text-align: center; */
+}
+.HelpTitle {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #313131;
+  font-style: Bold;
+  padding: 0px 30px;
+}
+
+.helpP {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #878787;
+  padding: 0px 30px;
+}
+.selectQT {
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: SemiBold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #313131;
+  padding: 0px 14px;
+}
+.contentsH {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HelpCenter.module.css */
+
+.activeTab {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #e7bc73 !important; /* ya pink shade jo aapko chahiye */
+  /* color: #FFFFFF !important; */
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.OrderBtn {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 13px;
+  line-height: 24px;
+  color: #5a5a5a;
+  cursor: pointer;
+  /* display: flex; */
+  /* gap: 10px; */
+  /* justify-content: space-between; */
+  /* color: #E7BC73; */
+  padding: 5px 14px;
+}
+.OrderBtn:hover {
+  color: #e7bc73;
+}
+.rightArrow {
+  padding-right: 12px;
+  cursor: pointer;
+}
+.rightArrow::after {
+  content: ">";
+}
+
+.CardForTrackCancel {
+  height: 98px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.TractContentMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 0px;
+}
+.HeaderNameTrack {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  /* leading-trim: NONE; */
+  /* line-height: 28px; */
+  letter-spacing: 0%;
+  color: #5a5a5a;
+}
+.manageYourPurchases {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  /* line-height: 20px; */
+  letter-spacing: 0%;
+
+  color: #878787;
+}
+.OrdersBtnH {
+  height: 46px;
+  background-color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #e7bc73;
+  box-shadow: 0px 3px 6px 0px #120f281f;
+  color: #e7bc73;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0px 30px;
+  margin: 20px 0px;
+}
+
+.OrdersBtnH:hover,
+.OrdersBtnH:active {
+  background: transparent !important;
+  color: #e7bc73 !important;
+  border: 1px solid #e7bc73 !important;
+}
+.imageMakeup {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Contact Us help center  */
+
+/* .contactusMainCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+} */
+
+.headingContact {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  /* leading-trim: NONE; */
+  line-height: 36px;
+  letter-spacing: 0%;
+  display: flex;
+  flex-direction: column;
+
+  color: #e8618c;
+}
+.paragraphcontactqueries {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 28px;
+  letter-spacing: 0%;
+
+  color: #171a1f;
+}
+.cardMC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.card1 {
+  background-color: #e7c58a;
+  width: 50%;
+  height: 35px;
+  text-align: center;
+  font-style: Regular;
+  border: none;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.card2 {
+  width: 50%;
+  height: 35px;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #171a1f;
+}
+
+/* Account Part  */
+
+.helpContainer {
+  /* padding-top: 20px; */
+  padding-bottom: 60px;
+}
+
+.forsmallCardsAccoReEtc {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddButtonMain {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0px !important;
+  padding: 30px 0px;
+}
+.newIssuesButton {
+  background: transparent;
+  border: 1px solid #e7c58a;
+  color: #e7c58a;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.newIssuesButton:hover,
+.newIssuesButton:active {
+  background: transparent !important;
+  border: 1px solid #e7c58a !important;
+  color: #e7c58a !important;
+}
+.formHeaderIssues {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardForForm {
+  width: 630px;
+  /* height: 510px; */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px rgba(23, 26, 31, 0.07),
+    0px 0px 2px rgba(23, 26, 31, 0.07);
+  margin: 30px;
+  padding: 16px 20px;
+}
+.NewAddressFormHeading {
+  width: 700px;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 28px;
+  /* text-align: center !important; */
+  color: #9095a0;
+  display: flex;
+  justify-content: center;
+}
+.CloseButtonFormAddress {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #9095a0;
+}
+.CloseButtonFormAddress:hover {
+  color: #e7c58a;
+}
+.LabelName {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  /* line-height: 36px; */
+  color: #9095a0;
+}
+.formFillMainCon {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #e0e0e0;
+  color: #9095a0;
+}
+
+.formFillMainCon:focus {
+  box-shadow: none;
+  border: 1px solid #e6b8bf;
+}
+.submitBtnForSave {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #e7bc73;
+  background: transparent;
+  color: #e7bc73;
+}
+
+.submitBtnForSave:hover,
+.submitBtnForSave:active {
+  background: transparent !important;
+  color: #e7bc73 !important;
+  border: 1px solid #e6b8bf;
+}
+
+.tabIcon {
+  background: #fce5eb;
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  margin: 0 auto 10px;
+  padding: 14px;
+  box-shadow: 0 0 4px #ccc;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  color: #333;
+}
+.tabIcon2 {
+  background: #f4f4f4;
+}
+.tabIcon3 {
+  background: #f5f0e1;
+}
+.tabIcon4 {
+  background: #f9f5e1;
+}
+.tabIcon5 {
+  background: #e1f5f2;
+}
+.tabIcon5 {
+  background: #faedeb;
+}
+
+.tabIcon img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.tabIcon.active {
+  background: #ffeaf1;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.helpCard {
+  width: 630px;
+  height: 510px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px rgba(23, 26, 31, 0.07),
+    0px 0px 2px rgba(23, 26, 31, 0.07);
+  margin: 30px;
+  padding: 16px 20px;
+}
+
+.iconForAccountNow {
+  font-size: 18px;
+  color: #282c3f;
+}
+.AccounttextNow {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #282c3f;
+}
+.description {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  /* leading-trim: NONE; */
+  line-height: 16px;
+  letter-spacing: 0%;
+
+  color: #535766;
+  /* font-size: 14px;
+  margin-bottom: 20px; */
+}
+
+.footerNote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: flex-start;
+  margin-top: 30px;
+  font-size: 13px;
+  margin: 0px -80px;
+  /* color: #555; */
+}
+.queris30 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  color: #171a1f;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.mainPOfQuries {
+  display: flex;
+  flex-direction: column;
+  color: #171a1f;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+/* .accordionButtonCustom {
+  background: red !important;
+  color: white;
+} */
+
+/* HelpCenter.module.css */
+/* .nav-pills .nav-link.active {
+  background-color: #ffdee9;
+  color: #d63384;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.nav-pills .nav-link {
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 15px;
+  padding: 10px;
+} */
+
+/* Non Traker  */
+.cAccountBtnName {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  /* leading-trim: NONE; */
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #282c3f;
+}
+.headingAccount {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.imageIconuserAccount {
+  /* background-color: #282C3F; */
+  color: #282c3f;
+}
+
+/* Resent Issues  */
+.cardRecentissues {
+  min-height: 549px;
+  background-color: #f8f9fa;
+  border: 1px #bcc1ca;
+}
+.cardinner1 {
+  padding: 10px 20px;
+}
+
+.imageAndissuescon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+}
+.queriesP1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e8618c;
+}
+.queriesPChange {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #e8618c;
+}
+
+.headingissuesNoFound {
+  font-family: Archivo;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  color: #9095a0;
+}
+
+.pForissuesnoqueriesrasised {
+  font-family: Archivo;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0%;
+
+  color: #565e6c;
+}
+
+/* recent issues */
+
+.Typeshead {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 36px;
+
+  color: #666666;
+}
+
+.pargraphEdit {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  color: #9095a0;
+}
+.pargraphEdit2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 22px;
+  color: #9095a0;
+}
+
+.statusOpen {
+  color: #379ae6;
+  font-weight: 600;
+}
+.statusInProgress {
+  color: #1dd75b;
+  font-weight: 600;
+}
+.statusClosed {
+  color: #de3b40;
+  font-weight: 600;
+}

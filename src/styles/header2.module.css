@@ -1,0 +1,237 @@
+.headerRoot {
+  background-color: #E6B8BF;
+  color: #fff;
+  height: 54px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.countryBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.2rem;
+}
+.discountBox{
+    display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+.countryBox {
+  background-color: #E6B8BF;
+  border-radius: 999px;
+  padding: 0 8px;
+  height: 54px;
+}
+
+.countryInner {
+  background-color: #fff;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  padding: 0 12px;
+  min-width: 200px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.circleIcon {
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 50%;
+  background-color: #E6B8BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+ .SelectFieldH{
+    font-size: 16px;
+    color: #E6B8BF;
+    font-family:'Inter';
+  }
+.dropdownBox {
+  background-color: #fff;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  width: 35px;
+  min-height: 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percentageIcon{
+    width: 30px;
+    height: 30px;
+    font-size: '18px'
+}
+.RegisterText{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+}
+.TimerBoxH{
+    background-color: #FFFFFF;
+    color: #E6B8BF;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.dropdownBox select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.scoiaLinks{
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+}
+
+/* Responsive scaling */
+.SmallScTimer{
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .countryBox {
+  background-color: #E6B8BF;
+  border-radius: 999px;
+  /* min-height: 50px; */
+  min-height: 34px;
+}
+  .circleIcon {
+    min-width: 14px;
+    min-height: 14px;
+  }
+  .countryInner {
+    min-width: 80px;
+    padding: 0 8px;
+    min-height: 24px;
+  }
+   .SekectFieldH{
+    font-size: 8px;
+  }
+  .dropdownBox {
+    min-width: 20px;
+    min-height: 24px;
+  }
+  .countryInner span,
+  .discountText {
+    font-size: 9px;
+  }
+  .percentageIcon{
+    width: 20px;
+    height: 20px;
+    font-size: '10px'
+}
+.RegisterText{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+}
+.TimerBoxH{
+    background-color: #FFFFFF;
+    color: #E6B8BF;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+}
+.SmallScTimer{
+  display: none;
+}
+  /* .timerBox {
+    font-size: 10px;
+    padding: 2px 6px !important;
+  } */
+   .scoiaLinks{
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+}
+  .socialBox svg {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+    .countryBox {
+  
+  min-height: 24px;
+}
+.SelectFieldH {
+    display: none;
+  }
+   /* .circleIcon {
+    min-width: 14px;
+    min-height: 14px;
+  }
+    .countryInner {
+    min-width: 40px;
+    padding: 0 4px;
+    min-height: 20px;
+  }
+   .dropdownBox {
+    min-width: 14px;
+    min-height: 20px;
+  }
+  .SekectFieldH{
+    font-size: 4px;
+  } */
+  /* .dropdownBox {
+    width: 60px;
+    height: 24px;
+  } */
+
+  .discountBox{
+    display: none;
+  }
+  .discountBox2{
+    display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+.percentageIcon2{
+    width: 30px;
+    height: 30px;
+    font-size: '18px'
+}
+.percentageIcon2{
+    width: 20px;
+    height: 20px;
+    font-size: '18px'
+}
+.RegisterText2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+}
+.TimerBoxH2{
+    background-color: #FFFFFF;
+    color: #E6B8BF;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+}
+  .countryInner span {
+    font-size: 10px;
+  }
+  .socialBox svg {
+    font-size: 14px !important;
+  }
+  .SmallScTimer{
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+}

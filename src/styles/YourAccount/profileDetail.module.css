@@ -1,0 +1,234 @@
+.HeadingOfPDet{
+    /* font-family: ; */
+    color: #666666;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    border-bottom: 1px solid #BCC1CA;
+}
+.navSection{
+    /* border: 1px solid black; */
+    /* width:; */
+    /* min-width: 320px; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 17px 35px 0px #E8618C3D, 0px 0px 2px 0px #E8618C1F;
+
+}
+
+.navSection a{
+    text-decoration: none;
+}
+
+
+.profileContainer {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #fff;
+  border-radius: 6px;
+  /* padding: 20px; */
+  box-shadow: 0 1px 10px rgba(236, 122, 153, 0.2);
+  /* width: 100%; */
+  padding: 0;
+  /* height: 100%; */
+}
+
+.profileHeader {
+    position: relative;
+  /* width: 100px; */
+  /* height: 100px; */
+padding: 5px 30px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #DEE1E6;
+  /* margin-bottom: 24px; */
+}
+.imageProfile{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* background-color: #CED0F8; */
+}
+/* .profileImageWrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+} */
+
+/* .imageProfile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+} */
+
+.cameraOverlay {
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.profileImageWrapper:hover .cameraOverlay {
+  opacity: 1;
+}
+
+.cameraIcon {
+  color: white;
+  font-size: 16px;
+}
+
+.userName {
+    font-family: 'Inter';
+    font-weight: 400;
+  margin: 0;
+  font-size: 18px;
+  color: #171A1F;
+}
+
+.userPhone {
+    font-family: 'Inter';
+    font-weight: 400;
+  margin: 0;
+  font-size: 13px;
+  color: #171A1F;
+}
+
+.sectionTitle {
+  font-family: 'Inter';
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 30px;
+  color: #666666;
+  margin-top: 20px;
+   padding: 0px 14px;
+  margin-bottom: 8px;
+}
+
+.navItem {
+   font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: #666666;
+  display: block;
+  padding: 0px 14px;
+  /* color: #333; */
+  text-decoration: none;
+  transition: color 0.2s;
+
+}
+
+/* .navItem:hover {
+  color: #e91e63;
+} */
+
+.navItem:hover {
+  color: #E6B8BF;
+}
+
+.isActive {
+  color: #E6B8BF;
+  font-weight: 400;
+}
+
+/* .tableWrapper {
+    width: 75%;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px 0px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+} */
+
+.detailsTable {
+  /* border: 1px solid #DEE1E6; */
+  /* border-radius: 8px !important; */
+  /* font-size: 14px; */
+   /* width: 60%; */
+   width: 733px;
+   height: 508px;
+   /* border-radius: 12px;
+   overflow: hidden; */
+    /* margin: 0 auto; */
+  border-radius: 6px;
+  border: 1px solid #DEE1E6;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.detailsTable tr:not(:last-child) td {
+  border-bottom: 1px solid #DEE1E6; /* sirf row ke beech border */
+}
+
+.detailsTable td:first-child {
+  border-right: 1px solid #DEE1E6; /* sirf column ke beech border */
+}
+
+.detailsTable td {
+   font-family: 'Inter';
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+
+padding: 12px;
+
+  vertical-align: middle;
+  color: #171A1F;
+  border-color: #DEE1E6 !important;
+}
+
+.editBtn {
+  width: 125px;
+  height: 53px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 3px solid #E6B8BF;
+  color: #E6B8BF;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 8px 17px 0px #171A1F26 , 0px 0px 2px 0px #171A1F1F;
+
+  /* box-shadow: 0 4px 8px rgba(236, 122, 153, 0.2); */
+}
+
+.editBtn:hover , .editBtn:active {
+  border: 1px solid #E6B8BF !important;
+  background-color: #fef0f3 !important;
+  color: #E6B8BF !important;
+  transition: all 0.4s ease-out;
+}
+
+/* .navItem {
+  display: block;
+  padding: 10px 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+} */
+
+
