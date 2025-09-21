@@ -10,18 +10,17 @@ import {
 } from "react-bootstrap";
 import styles from "../../styles/VenueSection/herosec.module.css";
 import { LuPyramid } from "react-icons/lu";
-import { FaCalendarAlt, FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { IoIosStar } from "react-icons/io";
-
 import { Pagination } from "react-bootstrap";
 import { IoCheckboxSharp } from "react-icons/io5";
 import { PiUsersThreeBold } from "react-icons/pi";
-import Link from "next/link";
 import { useState } from "react";
-// import styles from './PaginationNav.module.css';
+import { useRouter } from "next/router";
 
 export default function CategoriesCards({ productsCat, loading }) {
+    const router = useRouter();
     const [selectedGuests, setSelectedGuests] = useState({});
     const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
@@ -52,7 +51,10 @@ export default function CategoriesCards({ productsCat, loading }) {
         setCurrentPage(pageNumber);
     };
 
-    // Filter to get the field you want (e.g., "number_of_guests")
+
+    const handleNavigation = (productId, categoryId) => {
+        router.push(`/preview?productId=${productId}&categoryId=${categoryId}`);
+    };
 
     return (
         <section className="mt-4">
@@ -160,8 +162,12 @@ export default function CategoriesCards({ productsCat, loading }) {
                                                 xs={12}
                                                 className="mb-4"
                                             >
-                                                <Link
-                                                    href={`/venue/${item.id}/${item.category.id}`}
+                                                <div
+
+                                                    onClick={() => {
+                                                        handleNavigation(item.id, item.category.id);
+                                                    }}
+
                                                     style={{ textDecoration: "none" }}
                                                 >
                                                     <Card className={`${styles.card} h-100`}>
@@ -295,7 +301,7 @@ export default function CategoriesCards({ productsCat, loading }) {
                                                             </div>
                                                         </Card.Body>
                                                     </Card>
-                                                </Link>
+                                                </div>
                                             </Col>
                                         );
                                     })}
@@ -314,18 +320,6 @@ export default function CategoriesCards({ productsCat, loading }) {
                     >
                         Previous
                     </Pagination.Prev>
-
-                    {/* <Pagination.Item
-            className={`${styles.pageItem} ${styles.activeItem}`}
-          >
-            1
-          </Pagination.Item>
-          <Pagination.Item className={styles.pageItem}>2</Pagination.Item>
-          <Pagination.Item className={styles.pageItem}>3</Pagination.Item>
-          <Pagination.Item cl          assName={styles.pageItem}>4</Pagination.Item>
-          <Pagination.Item className={styles.pageItem}>5</Pagination.Item>
-          <Pagination.Item className={styles.pageItem}>6</Pagination.Item> */}
-
                     {[...Array(totalPages)].map((_, i) => (
                         <Pagination.Item
                             className={`${styles.pageItem} ${i + 1 === currentPage ? styles.activeItem : ""

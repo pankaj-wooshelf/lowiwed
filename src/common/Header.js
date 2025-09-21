@@ -44,7 +44,7 @@ const Header = () => {
                         {/* Offer & Timer */}
                         <div className={styles.discountBox}>
                             <RiDiscountPercentFill className={styles.percentageIcon} />
-                            <span className={`${styles.RegisterText}  discountText`} style={{}} onClick={() => router.push('/home')}>
+                            <span className={`${styles.RegisterText}  discountText`} style={{}} onClick={() => router.push('/')}>
                                 Register Today : 90% off
                             </span>
                             <div className={`${styles.TimerBoxH} rounded-pill px-lg-3 px-1 py-1 d-flex align-items-center timerBox`}>

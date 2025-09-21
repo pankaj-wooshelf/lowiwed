@@ -109,7 +109,7 @@ const SignUp = ({ modalVisible, setModalVisible, switchToLogin }) => {
             localStorage.removeItem("auth_step");
             localStorage.removeItem("registered_email"); // clear storage
             setModalVisible(false);
-            router.push('/home')
+            router.push('/')
         } catch (err) {
             toast.error(err.response?.data?.message || "OTP verification failed");
         }

@@ -63,7 +63,7 @@ const Login = ({ modalVisible, setModalVisible, switchToSignUp }) => {
                     router.push('/seller/dashboard/d');
                 }
                 if (response.data.user_profile.role === "buyer") {
-                    router.push('/home');
+                    router.push('/');
                 }
                 setEmail("");
                 setPassword("");

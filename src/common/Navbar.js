@@ -66,7 +66,7 @@ const Navbar = () => {
                                 </Button>
                                 <div
                                     className="d-flex justify-content-center align-items-center cursor-pointer"
-                                    onClick={() => router.push("/home")}
+                                    onClick={() => router.push("/")}
                                 >
                                     <img
                                         src="/Images/ButterF.png"

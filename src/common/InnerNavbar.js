@@ -14,7 +14,7 @@ const InnerNavbar = () => {
             </div>
             <div className={styles.navLinks}>
                 <Nav className={styles.navItems}>
-                    <Nav.Link href="/home" className={styles.linkColor}>Home</Nav.Link>
+                    <Nav.Link href="/" className={styles.linkColor}>Home</Nav.Link>
                     {/* <Nav.Link href="/venue" className={styles.linkColor}>Venue</Nav.Link> */}
                     <Nav.Link href="/vendors" className={styles.linkColor}>Products</Nav.Link>
                     <Nav.Link href="/vendorsProductDetails" className={styles.linkColor}>Blog</Nav.Link>
