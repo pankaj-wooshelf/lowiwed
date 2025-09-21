@@ -137,7 +137,7 @@ const Navbar = () => {
                                         <Dropdown.Menu className={`${stylesN.dropdownMenu} py-3`}>
                                             <div
                                                 className={stylesN.userInfo}
-                                                onClick={() => router.push("profileDetail/user-Detail")}
+                                                onClick={() => router.push("account/profile")}
                                             >
                                                 <Dropdown.Item>Hello, {user?.full_name}</Dropdown.Item>
                                                 <Dropdown.Item className={stylesN.pforphoneNumber}>
