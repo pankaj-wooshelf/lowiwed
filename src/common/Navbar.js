@@ -25,11 +25,13 @@ import { useRouter } from "next/router";
 import { useAuth } from "./AuthContext";
 import { HiMiniUserPlus, HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { MdOutlineClearAll } from "react-icons/md";
+import RegisterSellerModal from "./RegisterSellerModal";
 
 const Navbar = () => {
     const router = useRouter();
     const [modalType, setModalType] = useState(null);
     const [showMenu, setShowMenu] = useState(false);
+    const [showSellerModal, setShowSellerModal] = useState(false);
     const { user, token, logout } = useAuth();
     const handleClose = () => setShowMenu(false);
     const handleShow = () => setShowMenu(true);
@@ -79,7 +81,7 @@ const Navbar = () => {
 
                             <div className={`${styles.searchCata}`}>
 
-                                <div className={`${styles.catalogBtn} bg-white`}>
+                                {/* <div className={`${styles.catalogBtn} bg-white`}>
                                     <div className={styles.catalogIcon}>
                                         <CiCircleList />
                                     </div>
@@ -97,7 +99,7 @@ const Navbar = () => {
                                         <NavDropdown.Item>Checklists</NavDropdown.Item>
                                         <NavDropdown.Item>Vendors</NavDropdown.Item>
                                     </NavDropdown>
-                                </div>
+                                </div> */}
                                 <div className={styles.searchBox}>
 
                                     <div className={styles.catalogIcon}>
@@ -185,22 +187,43 @@ const Navbar = () => {
                                         </Dropdown.Menu>
                                     </Dropdown>
                                 ) : (
-                                    <span
-                                        className={`${stylesN.forloginborder} Inter400`}
-                                        onClick={() => setModalType("login")}
-                                    >
-                                        {/* <HiMiniUserPlus className={stylesN.SmallScProgileIcon} /> */}
-                                        Log in
-                                    </span>
+                                    <>
+                                        <Dropdown className={`${stylesN.accountDropdown} border-0`}>
+                                            <Dropdown.Toggle
+                                                variant="light"
+                                                className={`${stylesN.forloginborder} ${stylesN.noCaret} Inter400`}
+                                            >
+                                                Log in
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu className={`${stylesN.dropdownMenuone} p-0 `}>
+                                                <Dropdown.Item
+                                                    onClick={() => setModalType("loginBuyer")}
+                                                    className={`${stylesN.dropdownitemone} py-2`}
+
+                                                >
+                                                    Login as Buyer
+                                                </Dropdown.Item>
+                                                <Dropdown.Item
+                                                    onClick={() => setShowSellerModal(true)}
+                                                    className={`${stylesN.dropdownitemone} py-2`}
+                                                >
+                                                    Login as Seller
+                                                </Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+
+                                    </>
+
                                 )}
 
-                                <Button
+                                {/* <Button
                                     variant="light"
                                     className={styles.sellBtn}
                                     onClick={() => router.push("/venue")}
                                 >
                                     Sell Now
-                                </Button>
+                                </Button> */}
                                 <div className={`${styles.dropboxforlanmain}`}>
                                     <div className="langtextHB">EN</div>
                                     <Dropdown className={`${stylesN.langBtn} customDropdown`}>
@@ -223,7 +246,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    {modalType === "login" && (
+                    {modalType === "loginBuyer" && (
                         <Login
                             modalVisible={true}
                             setModalVisible={() => setModalType(null)}
@@ -231,13 +254,20 @@ const Navbar = () => {
                         />
                     )}
 
-                    {modalType === "signup" && (
+                    {modalType === "loginSeller" && (
                         <SignUp
                             modalVisible={true}
                             setModalVisible={() => setModalType(null)}
                             switchToLogin={() => setModalType("login")}
                         />
                     )}
+                    {showSellerModal && (
+                        <RegisterSellerModal
+                            show={showSellerModal}
+                            onHide={() => setShowSellerModal(false)}
+                        />
+                    )}
+
                 </Container>
                 <Offcanvas show={showMenu} onHide={handleClose} placement="start">
                     <Offcanvas.Header closeButton>
