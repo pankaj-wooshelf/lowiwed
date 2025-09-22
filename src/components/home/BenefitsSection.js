@@ -1,47 +1,8 @@
-import { Fragment, useEffect, useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Fragment } from "react";
+import { Container, Row, Col, Card, Spinner } from "react-bootstrap";
 import Styles from "../../styles/LandingPage.module.css";
-import axios from "axios";
 
-export default function BenefitsSection() {
-    const [brideData, setBrideData] = useState([]);
-    const [businessData, setBusinessData] = useState([])
-    // const [loading,setLoading] = useState(false);
-    const [error, setError] = useState([]);
-
-    const fetchData = async () => {
-        // setLoading(true);
-        try {
-            const response = await axios(
-                "https://lowiwed-api.wooshelf.com/v1/api/benefits-list/");
-            if (response.status === 200) {
-                const apiData = response.data.response || [];
-
-                // This Data For Benifit 
-                const filteredAndSortedDataBride = [...apiData]
-                    .filter((item) => item.benefit_type === "bride")
-                    .sort((a, b) => a.id - b.id);
-
-                const filteredAndSortedDataBusiness = [...apiData]
-                    .filter((item) => item.benefit_type === "business")
-                    .sort((a, b) => a.id - b.id);
-
-                setBrideData(filteredAndSortedDataBride);
-                setBusinessData(filteredAndSortedDataBusiness)
-                // console.log(filteredAndSortedDataBride );
-                // console.log(filteredAndSortedDataBusiness );
-            } else {
-                setError("Failed to load benefits data.");
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    };
-    // console.log(benifitData);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
+export default function BenefitsSection({ brideData, businessData, loading }) {
 
     return (
         <Fragment>
@@ -64,6 +25,16 @@ export default function BenefitsSection() {
                         </div>
 
                         <Row className="g-2 mb-5 justify-content-center">
+
+
+                            {loading && (
+                                <div className="d-flex justify-content-center align-items-center my-5">
+                                    <Spinner animation="border" role="status" variant="primary">
+                                        <span className="visually-hidden">Loading...</span>
+                                    </Spinner>
+                                </div>
+                            )}
+
                             {
                                 brideData.map((benefit, index) => (
                                     <Col
@@ -128,6 +99,14 @@ export default function BenefitsSection() {
                         </div>
 
                         <Row className="g-2 justify-content-center">
+                            {loading && (
+                                <div className="d-flex justify-content-center align-items-center my-5">
+                                    <Spinner animation="border" role="status" variant="primary">
+                                        <span className="visually-hidden">Loading...</span>
+                                    </Spinner>
+                                </div>
+                            )}
+
                             {businessData.map((benefit, index) => (
                                 <Col
                                     key={index}
@@ -148,8 +127,8 @@ export default function BenefitsSection() {
                                                 {" "}
                                                 <div
                                                     className={`${index === 0
-                                                            ? Styles.specialIcon
-                                                            : Styles.benefitIcon
+                                                        ? Styles.specialIcon
+                                                        : Styles.benefitIcon
                                                         } mb-2`}
                                                 >
                                                     <img

@@ -1,16 +1,43 @@
-import React, { Fragment } from 'react';
-import Image from 'next/image';
+import React, { Fragment, useEffect, useState } from 'react';
 import stylesM from '../../styles/Home.module.css';
 import styles from '../../styles/VendorStoryForHome.module.css';
 import { LuPyramid } from "react-icons/lu";
 import { GrSend } from 'react-icons/gr';
-export const VendorSuccessStoriesDa = Array(4).fill({
-    vendorImage: '/Images/FeatureBride.png',
-    name: 'Bride Shopping Stories: From Dreams to Reality',
-    Points: `Read about brides' unforgettable journeys as they shop for their dream wedding attire on our platform. Discover how they found the perfect dress and accessories `,
-});
+import { toast } from 'react-toastify';
+import axios from 'axios';
+
+// export const VendorSuccessStoriesDa = Array(4).fill({
+//   vendorImage: '/Images/FeatureBride.png',
+//   name: 'Bride Shopping Stories: From Dreams to Reality',
+//   Points: `Read about brides' unforgettable journeys as they shop for their dream wedding attire on our platform. Discover how they found the perfect dress and accessories `,
+// });
 
 const VendorSuccessStories = () => {
+
+    const [dataStory, setDataStory] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    const fetchDataStory = async () => {
+        try {
+            setLoading(true)
+            const response = await axios("https://lowiwed-api.wooshelf.com/v1/api/seller-stories/");
+            console.log(response.data);
+            if (response.status === 200) {
+                setDataStory(response.data.response)
+
+            }
+        } catch (error) {
+            toast.error(error?.response?.data?.response)
+        } finally {
+            setLoading(false)
+        }
+    };
+    // console.log(benifitData);
+
+    useEffect(() => {
+        fetchDataStory();
+    }, []);
+
     return (
         <Fragment>
             {/* VendorSuccessStories */}
@@ -35,42 +62,43 @@ const VendorSuccessStories = () => {
 
                         <div className={styles.cardsRowWrapper}>
 
-                            {VendorSuccessStoriesDa.map((biz, index) => (
+                            {dataStory.map((biz, index) => (
                                 <div key={index} className={styles.thisisAWraper}>
                                     <div className={styles.businessCardOuterStories}>
-                                        <div className={styles.businessCardStories}>
-                                            <div className={styles.imageWrapperStories}>
-                                                <img
-                                                    src={biz.vendorImage}
-                                                    alt={biz.category}
-                                                    layout="responsive"
-                                                    width={331}
-                                                    height={466}
-                                                    className={styles.businessImageStories}
-                                                />
-                                                <div className={styles.leftTOpShow}>
-                                                    6  June 2025
-                                                </div>
-                                            </div>
+                                        {/* <div className={styles.businessCardStories}> */}
 
-                                            <div className={styles.cardContentStories}>
-                                                <div className="d-flex justify-content-between justify-content-center align-items-center">
-                                                    <h5 className={styles.NameStories}>{biz.name}</h5>
-                                                </div>
-
-                                                <div className="d-flex flex-column mb-2">
-
-                                                    <p className={`${styles.StoriesSubText}`}>{biz.Points}</p>
-                                                </div>
-
-
-                                                <div className="d-flex justify-content-center align-items-center">
-                                                    <div className={styles.shareBtnFeature}>
-                                                        <GrSend className={styles.shareClFeature} />
-                                                    </div>
-                                                </div>
+                                        <div className={styles.imageWrapperStories}>
+                                            <img
+                                                src={`https://lowiwed-api.wooshelf.com/${biz.image}`}
+                                                alt={biz.category}
+                                                layout="responsive"
+                                                className={styles.businessImageStories}
+                                            />
+                                            <div className={styles.leftTOpShow}>
+                                                6  June 2025
                                             </div>
                                         </div>
+
+                                        <div className={styles.cardContentStories}>
+
+                                            <div className="d-flex justify-content-between justify-content-center align-items-center">
+                                                <h5 className={styles.NameStories}>{biz.short_bio}</h5>
+                                            </div>
+
+                                            <div className="d-flex flex-column mb-2">
+
+                                                <span className={`${styles.StoriesSubText}`}>{biz.description}</span>
+                                            </div>
+
+                                            <div className={styles.shareBtnMain}>
+                                                <div className={styles.shareBtnFeature}>
+                                                    <GrSend className={styles.shareClFeature} />
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        {/* </div> */}
                                     </div>
                                 </div>
 

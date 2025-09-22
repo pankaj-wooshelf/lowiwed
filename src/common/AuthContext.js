@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     const [userData, setUserData] = useState({});
     const [tempProfilePic, setTempProfilePic] = useState(null);
     const [tempProfilePicFile, setTempProfilePicFile] = useState(null);
-    // const [message, setMessage] = useState(null);
+    const [wishlist, setWishlist] = useState([]);
 
     const resetTempProfilePic = () => {
         setTempProfilePic(null);
@@ -20,7 +20,6 @@ export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(Cookies.get("access_token") || null);
 
     const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
-
 
     const fetchUserData = async () => {
         try {
@@ -40,6 +39,59 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+    // ---- Wishlist Functions ----
+
+    const addToWishlist = async (productId) => {
+        try {
+            const res = await axios.post(
+                `${BASE_URL}/wishlist/`,
+                { product_listing: productId },
+                { headers: { Authorization: `Bearer ${token}` } }
+            );
+
+            if (res.status === 200) {
+                toast.success(res.data.message);
+                setWishlist((prev) => [...prev, res.data.response]);
+                return res.data.response;
+            }
+        } catch (err) {
+            toast.error(err.response?.data?.response || "Failed to add wishlist");
+            throw err;
+        }
+    };
+
+    const removeFromWishlist = async (wishlistId) => {
+        try {
+            const res = await axios.delete(`${BASE_URL}/wishlist/${wishlistId}/`, {
+                headers: { Authorization: `Bearer ${token}` },
+            });
+
+            if (res.status === 200) {
+                toast.info(res.data.message);
+                setWishlist((prev) => prev.filter((w) => w.id !== wishlistId));
+                return true;
+            }
+        } catch (err) {
+            toast.error(err.response?.data?.response || "Failed to remove wishlist");
+            throw err;
+        }
+    };
+
+    const fetchWishlist = async () => {
+        try {
+            const res = await axios.get(`${BASE_URL}/wishlist/`, {
+                headers: { Authorization: `Bearer ${token}` },
+            });
+
+            if (res.status === 200) {
+                setWishlist(res.data.response);
+                return res.data.response;
+            }
+        } catch (err) {
+            toast.error("Failed to fetch wishlist");
+            throw err;
+        }
+    };
 
     const updateUser = async (formData) => {
         try {
@@ -51,19 +103,17 @@ export const AuthProvider = ({ children }) => {
             });
 
             if (response.status === 200) {
-                toast.success(response.data.message)
+                toast.success(response.data.message);
                 await fetchUserData();
             }
 
             return response;
         } catch (error) {
             toast.error(error.response?.data?.response || error.message);
-
         }
     };
 
-
-
+    // Fetch user profile
     useEffect(() => {
         if (token) {
             axios
@@ -85,7 +135,7 @@ export const AuthProvider = ({ children }) => {
                     Cookies.remove("access_token");
                 });
         }
-    }, [token, BASE_URL]);
+    }, [token]);
 
     // Fetch buyer account data initially
     useEffect(() => {
@@ -94,7 +144,6 @@ export const AuthProvider = ({ children }) => {
             fetchUserData();
         }
     }, [token]);
-
 
     // Login & Logout
     const login = (newToken) => {
@@ -124,6 +173,10 @@ export const AuthProvider = ({ children }) => {
                 tempProfilePicFile,
                 setTempProfilePicFile,
                 resetTempProfilePic,
+                wishlist,
+                addToWishlist,
+                removeFromWishlist,
+                fetchWishlist,
             }}
         >
             {children}
@@ -132,5 +185,3 @@ export const AuthProvider = ({ children }) => {
 };
 
 export const useAuth = () => useContext(AuthContext);
-
-

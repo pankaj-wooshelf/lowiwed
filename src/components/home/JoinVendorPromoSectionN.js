@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { Col, Container, Row, Button, Modal, Form } from "react-bootstrap";
-// import VendorsForm from '../VendorForms/VendorsForm'
 import stylesM from "../../styles/SellerForm/sellerForm.module.css";
 import stylesT from "../../styles/Form.module.css";
 
@@ -50,7 +49,7 @@ const offerS = [
     "Data Analysis",
 ];
 
-const JoinVendorPromoSection = () => {
+const JoinVendorPromoSection = ({ banner }) => {
     const [activeModal, setActiveModal] = useState(false);
 
     const [step, setStep] = useState(1);
@@ -83,14 +82,6 @@ const JoinVendorPromoSection = () => {
 
     const router = useRouter();
 
-    // const [dynamicValue, setDynamicValue] = useState(null);
-
-    // useEffect(() => {
-    //   const realValue = window.location.pathname;
-    //   setDynamicValue(realValue);
-    // }, []);
-
-    // Load saved data from localStorage
     useEffect(() => {
         const savedData = localStorage.getItem("vendorForm");
         if (savedData) {
@@ -353,40 +344,48 @@ const JoinVendorPromoSection = () => {
         }
     };
 
-    // if (dynamicValue === null) {
-    //   // Render placeholder during SSR
-    //   return <div>Loading...</div>;
-    // }
 
     return (
         <>
-            { }
-            <div className={`${styles.mainContainer} mt-5`}>
-                <Container fluid="lg">
-                    <Row className="align-items-center">
-                        <Col lg={6} className={styles.leftContent}>
-                            <h2 className={styles.heading}>
-                                <span className={styles.bold}>Resell </span>
-                                <span className={styles.or}>or </span>
-                                <span className={styles.bold}>Promote </span>
-                                Your Wedding <br /> Services & Products Here!
-                            </h2>
-                            <p className={styles.description}>
-                                Join our platform to list bridal outfits, jewelry, or wedding{" "}
-                                <br /> services. Reach thousands of brides-to-be.
-                            </p>
-                            <Button
-                                onClick={() => {
-                                    setActiveModal(true);
-                                }}
-                                className={styles.ctaButton}
-                            >
-                                Registered as a Vendor
-                            </Button>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            {
+                banner.map((ban, index) => {
+                    return <div className={`${styles.mainContainer} mt-5`}
+                        style={{
+                            backgroundImage: `url(https://lowiwed-api.wooshelf.com/${ban?.image})`,
+
+                        }}
+                        key={ban.id}
+                    >
+                        <Container fluid="lg">
+                            <Row className="align-items-center">
+                                <Col lg={6} className={styles.leftContent}>
+                                    <h2 className={styles.heading}>
+                                        {/* <span className={styles.bold}>Resell </span>
+                <span className={styles.or}>or </span>
+                <span className={styles.bold}>Promote </span>
+                Your Wedding <br /> Services & Products Here! */}
+                                        {ban?.title}
+                                    </h2>
+                                    <p className={styles.description}>
+                                        {/* Join our platform to list bridal outfits, jewelry, or wedding{" "}
+                <br /> services. Reach thousands of brides-to-be. */}
+                                        {ban.description}
+                                    </p>
+                                    <Button
+                                        onClick={() => {
+                                            setActiveModal(true);
+                                        }}
+                                        className={styles.ctaButton}
+                                    >
+                                        Registered as a Vendor
+                                    </Button>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </div>
+                })
+            }
+
 
             <Modal
                 show={activeModal}

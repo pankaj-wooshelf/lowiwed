@@ -1,10 +1,38 @@
-import React, { Fragment } from "react";
-import Image from "next/image";
+import React, { Fragment, useState } from "react";
 import styles from "../../styles/Home.module.css";
 import { FaSearch } from "react-icons/fa";
 import { Form, Button } from "react-bootstrap";
+import { toast } from "react-toastify";
+import axios from "axios";
 
-const UpcomingSubsribe = () => {
+const UpcomingSubsribe = ({ homeContent }) => {
+    const [email, setEmail] = useState("");
+    const [loading, setLoading] = useState("")
+
+    const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+    // const [error, setError] = useState([]);
+
+    const handleSubscribe = async () => {
+        try {
+            setLoading(true)
+            if (!email || !email.includes('@')) {
+                toast.error("Please Enter the Valid Email")
+                return
+            }
+            const response = await axios.post(`${BASE_URL}/newsletter/subscribe/`, { email });
+            if (response.status === 200) {
+                toast.success(response.data.message)
+                setEmail("")
+            }
+        } catch (error) {
+            toast.error(error?.response?.data?.response)
+        } finally {
+            setLoading(false)
+        }
+    };
+
+
+
     return (
         <Fragment>
             {/* Weekly Top Businesses At LowiWed */}
@@ -25,7 +53,8 @@ const UpcomingSubsribe = () => {
                                 style={{ color: "#0A1A35" }}
                             >
                                 <span className={styles.line}></span>
-                                Be Part of Europe's Upcoming Biggest Wedding Marketplace
+                                {/* Be Part of Europe's Upcoming Biggest Wedding Marketplace */}
+                                {homeContent[0]?.title}
                                 <span className={styles.line}></span>
                             </h2>
                         </div>
@@ -38,6 +67,8 @@ const UpcomingSubsribe = () => {
                                         type="email"
                                         placeholder="Enter Your Email"
                                         className={styles.inputField2subsc}
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
 
@@ -45,7 +76,11 @@ const UpcomingSubsribe = () => {
                                 <div
                                     className={`${styles.inputSection4subsc} ${styles.buttonSection2subsc}`}
                                 >
-                                    <Button className={styles.buttonText2subsc}>Subscribe</Button>
+                                    <Button
+                                        className={styles.buttonText2subsc}
+                                        onClick={handleSubscribe}
+                                        disabled={loading}
+                                    >{loading ? "Subscribing..." : "Subscribe"}</Button>
                                 </div>
                             </div>
                         </div>

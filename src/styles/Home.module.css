@@ -972,7 +972,7 @@ border-bottom-left-radius: 14px;
 .icon3 {
   color: #ffffff;
   font-size: 20px;
-  text-align: flex-end;
+  text-align: end;
   position: absolute;
   right: -100%;
   /* margin-right: 10px; */
@@ -1306,16 +1306,16 @@ border-bottom-left-radius: 14px;
 /* JoinVendorPromoSection  */
 
 .mainContainer {
-  background-image: url("/Images/PromoteVE.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  width: 100vw;
-  padding: 80px 0;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  /* background-image: url('/Images/PromoteVE.png'); */
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  width: 100vw !important;
+  padding: 40px 0 !important;
+  position: relative !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: hidden !important;
 }
 
 .heading {
@@ -1323,7 +1323,7 @@ border-bottom-left-radius: 14px;
   font-weight: 400;
   font-size: 38px;
   line-height: 58px;
-  text-align: flex-start;
+  text-align: start;
   margin-bottom: 1rem;
 }
 .bold {
@@ -1333,6 +1333,7 @@ border-bottom-left-radius: 14px;
   color: #e6b8bf;
 }
 .description {
+  width: 400px;
   font-family: "Adamina";
   font-size: 18px;
   color: #666666;
@@ -1644,9 +1645,14 @@ border-bottom-left-radius: 14px;
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
-.heartI {
+
+.heartDeactive {
   /* background-color: #fff; */
   color: #ffe5e5;
+  font-size: 25px;
+}
+.heartI {
+  color: #e7c58a;
   font-size: 25px;
 }
 .forTitleOfAndDollerMoneyMain {
@@ -1656,7 +1662,7 @@ border-bottom-left-radius: 14px;
 }
 
 .cardTitleForpromotionN {
-  text-align: flex-start;
+  text-align: start;
   font-size: 14px;
   /* line-height: 33px; */
   margin: 0px !important;
@@ -1715,8 +1721,8 @@ border-bottom-left-radius: 14px;
   border-radius: 50%;
   /* background-color: #E7C58A; */
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: end;
+  align-items: end;
 }
 .shareCl {
   font-size: 30px;

@@ -1,12 +1,10 @@
 .businessMainStories {
   min-height: 556px;
-  
 }
-.innerBusinessCardStories{
+.innerBusinessCardStories {
   width: 100%;
-  border: 1px solid #E7C58A;
+  border: 1px solid #e7c58a;
 }
-
 
 .cardsRowWrapper {
   display: flex;
@@ -18,27 +16,26 @@
 .thisisAWraper {
   flex: 1 1 22%; /* 4 in a row */
   min-width: 280px;
+  /* min-height: 500px !important; */
   max-width: 305px;
 }
 
 .businessCardOuterStories {
-  border: 2px solid #E6D3C4;
-  
+  border: 2px solid #e6d3c4;
   background: white;
   width: 305px;
-   min-height: 350px;
-  /* height: auto; */
+  min-height: 450px;
   margin: 10px auto;
 }
 
 .businessCardStories {
   overflow: hidden;
-  background: #fff;
+  background: #ffffff;
 }
 
 .imageWrapperStories {
-  background-color: #FBEAEA;
-  border: 1px solid #FFECCC;
+  background-color: #fbeaea;
+  border: 1px solid #ffeccc;
   position: relative;
   width: 100%;
 }
@@ -46,7 +43,7 @@
 .businessImageStories {
   padding: 3px;
   width: 100%;
-  height: auto;
+  height: 190px;
   display: block;
 }
 
@@ -57,9 +54,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #E7C58A;
-  color: #FFFFFF;
-  font-family: 'Inter';
+  background: #e7c58a;
+  color: #ffffff;
+  font-family: "Inter";
   font-size: 11px;
   padding: 2px 12px;
   border-radius: 14px;
@@ -70,61 +67,61 @@
 }
 
 .NameStories {
-  font-family: 'Adamina';
+  font-family: "Adamina";
   font-weight: 400;
   font-size: 12px;
-  color: #0A1A35;
+  color: #0a1a35;
 }
 
 .StoriesSubText {
-  font-family: 'Adamina';
+  font-family: "Adamina";
   font-size: 11px;
   line-height: 20px;
   color: #666666;
 }
 
-
-.shareBtnStories{
-   width: 54px;
-   height: 44px;
-   border-radius: 50%;
-   background-color: #E7C58A;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.shareBtnStories {
+  width: 54px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e7c58a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.shareClStories{
+.shareClStories {
   font-size: 30px;
   color: #fff;
   transform: rotate(45deg);
 }
-
-.shareBtnFeature{
-   width: 86px;
-   height: 38px;
-   border-radius: 50%;
-   background-color: #E7C58A;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.shareBtnMain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.shareClFeature{
+.shareBtnFeature {
+  width: 86px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #e7c58a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareClFeature {
   font-size: 24px;
   color: #fff;
   /* transform: rotate(45deg); */
 }
 @media (max-width: 768px) {
   .cardsRowWrapper {
-    justify-content: center !important;  /* center children */
+    justify-content: center !important; /* center children */
   }
 
   .thisisAWraper {
-    flex: none;              /* don’t stretch */
-    width: 100%;             /* full available width */
-    max-width: 305px;        /* but limit card size */
-    margin: 0 auto;          /* center horizontally */
+    flex: none; /* don’t stretch */
+    width: 100%; /* full available width */
+    max-width: 305px; /* but limit card size */
+    margin: 0 auto; /* center horizontally */
   }
 }
-
-
-
